@@ -1,0 +1,202 @@
+export const packagesData = [
+  {
+    id: "paket-outbound-perusahaan-malang",
+    title: "Paket Outbound Team Building Perusahaan Malang",
+    category: "Perusahaan",
+    categoryLabel: "Perusahaan & Korporat",
+    price: "Rp 185.000",
+    priceUnit: "/ orang (Min. 30 pax)",
+    location: "Coban Rondo / Pine Forest Batu Malang",
+    duration: "1 Hari (Full Day 08.00 - 16.00 WIB)",
+    badge: "BEST SELLER",
+    image: "/src/assets/images/paket_team_building_1784793017845.jpg",
+    shortDesc: "Paket khusus meningkatkan sinergi, kepemimpinan, dan komunikasi antar divisi perusahaan dengan fasilitator tersertifikasi BNSP di Coban Rondo Batu Malang.",
+    description: `Paket Outbound Team Building Perusahaan Malang dirancang khusus untuk meningkatkan motivasi kerja, solidaritas tim, efisiensi komunikasi, dan leadership pegawai. Menggunakan metode *Experiential Learning* berstandar nasional dengan games psikologi terpadu di kawasan hutan pinus sejuk Batu Malang.`,
+    facilities: [
+      "Fasilitator Outbound Tersertifikasi BNSP",
+      "Trainer Motivasi & Game Master",
+      "Peralatan Games & Sound System Lapangan",
+      "Sewa Lokasi Hutan Pinus / Coban Rondo Batu",
+      "1x Makan Siang Prasmanan Khas Malang",
+      "2x Coffee Break & Snack Tradisional",
+      "Air Mineral Unlimited Selama Acara",
+      "Banner Acara 4x1 Meter Custom Logo Perusahaan",
+      "Dokumentasi Foto & Video (File Drive + Reel Highlight)",
+      "Standard P3K & Asuransi Kegiatan"
+    ],
+    itinerary: [
+      "08.00 - 08.30 : Kedatangan & Registrasi Peserta di Lokasi",
+      "08.30 - 09.30 : Ice Breaking & Energizer Games",
+      "09.30 - 10.30 : Grouping & Team Building Competition",
+      "10.30 - 10.45 : Coffee Break Pertama",
+      "10.45 - 12.00 : Problem Solving & Leadership Challenge",
+      "12.00 - 13.00 : ISHOMA (Istirahat, Sholat, Makan Siang)",
+      "13.00 - 14.30 : Synergy & Synergy Tower Final Challenge",
+      "14.30 - 15.30 : Debriefing Psikologi & Commitment Building",
+      "15.30 - 16.00 : Penutupan, Foto Bersama & Kepulangan"
+    ]
+  },
+  {
+    id: "paket-outbound-rafting-batu",
+    title: "Paket Outbound + Rafting Kaliwatu / Kasembon Malang",
+    category: "Perusahaan",
+    categoryLabel: "Petualangan & Kombinasi",
+    price: "Rp 275.000",
+    priceUnit: "/ orang (Min. 20 pax)",
+    location: "Sungai Kaliwatu / Kasembon Malang",
+    duration: "1 Hari (Full Day 08.00 - 17.00 WIB)",
+    badge: "POPULER",
+    image: "/src/assets/images/paket_rafting_malang_1784793031028.jpg",
+    shortDesc: "Pengalaman penguji adrenalin mengarungi jeram sungai eksotis sepanjang 7-9 KM dikombinasikan dengan Fun Outbound Games di Batu Malang.",
+    description: `Kombinasi sempurna antara Fun Team Building Outbound di pagi hari dan Pengarungan Rafting Arum Jeram sepanjang 7 KM di Batu Malang. Sangat cocok untuk menyegarkan pikiran dan memompa semangat tim kerja maupun komunitas.`,
+    facilities: [
+      "Pengarungan Rafting 7 KM (Durasi 2 Jam)",
+      "Peralatan Rafting Standar Internasional (Perahu, Pelampung, Helm, Dayung)",
+      "Guide / Skiper Profesional & Tim Rescue River",
+      "Fun Outbound Games & Ice Breaking",
+      "Transportasi Lokal (Mobil Shuttle dari Finish ke Start)",
+      "1x Makan Siang Makan Khas Pedesaan",
+      "Mendoan Hangat & Welcome Drink Teh Pokak",
+      "Ruang Ganti & Bilas Shower Bersih",
+      "Dokumentasi Foto Aksi Pengarungan",
+      "Asuransi Jiwa Khusus Rafting"
+    ],
+    itinerary: [
+      "08.00 - 08.30 : Penjemputan di Basecamp Rafting",
+      "08.30 - 10.30 : Fun Outbound Games & Building Competition",
+      "10.30 - 11.00 : Briefing Keselamatan Rafting & Pembagian Equipment",
+      "11.00 - 13.00 : Pengarungan Rafting Jeram Sungai 7 KM",
+      "13.00 - 14.00 : Mandi, Bilas & Makan Siang Tradisional",
+      "14.00 - 15.00 : Evaluasi & Foto Bersama",
+      "15.00 : Selesai & Sesi Bebas"
+    ]
+  },
+  {
+    id: "paket-outbound-sekolah-edukasi",
+    title: "Paket Outbound Edukasi & Karakter Siswa Sekolah",
+    category: "Sekolah",
+    categoryLabel: "Sekolah & Pelajar",
+    price: "Rp 125.000",
+    priceUnit: "/ siswa (Min. 40 pax)",
+    location: "Taman Rekreasi Selecta / Songgoriti Batu",
+    duration: "Half Day (08.00 - 13.00 WIB)",
+    badge: "FAVORIT SEKOLAH",
+    image: "src/assets/images/photo (20).webp",
+    shortDesc: "Program pembentukan karakter, kemandirian, kedisiplinan, dan teamwork untuk siswa SD, SMP, SMA di alam terbuka Malang Batu.",
+    description: `Paket Outbound Sekolah Malang difokuskan pada pengembangan kemandirian, kepemimpinan muda, empati sosial, serta kekompakan kelas. Dikemas dengan fun educational games interaktif yang aman dan menyenangkan di bawah pengawasan instruktur sabar dan berpengalaman.`,
+    facilities: [
+      "Master Game & Pemandu Edukasi Anak/Remaja",
+      "Permainan Edukatif Pembentuk Karakter",
+      "Tiket Masuk Lokasi Wisata Outbound",
+      "1x Lunch Box + Drink",
+      "Snack Break & Susu Segar Malang",
+      "Peralatan Games & Sound System",
+      "Sertifikat Keikutsertaan Siswa",
+      "Banner Acara Sekolah 3x1 Meter",
+      "P3K & Asuransi"
+    ],
+    itinerary: [
+      "08.00 - 08.30 : Penyambutan & Pembarisan Siswa",
+      "08.30 - 09.30 : Senam Ceria & Fun Ice Breaking",
+      "09.30 - 11.30 : POS Games Karakter (Kemandirian, Kepemimpinan, Kerjasama)",
+      "11.30 - 12.30 : Makan Siang Bersama & Edukasi Lingkungan",
+      "12.30 - 13.00 : Penutupan, Pembagian Sertifikat & Foto Bersama"
+    ]
+  },
+  {
+    id: "paket-outbound-keluarga-gathering",
+    title: "Paket Outbound Family Gathering & Reuni Keluarga",
+    category: "Keluarga",
+    categoryLabel: "Keluarga & Reuni",
+    price: "Rp 150.000",
+    priceUnit: "/ orang (Min. 20 pax)",
+    location: "Kusuma Agrowisata / Coban Talun Batu",
+    duration: "1 Hari (08.30 - 15.00 WIB)",
+    badge: "FUN FAMILY",
+    image: "/src/assets/images/hero_outbound_malang_1784793004431.jpg",
+    shortDesc: "Ciptakan momen keakraban keluarga besar dengan permainan lintas generasi yang seru, hangat, dan ramah anak di kebun apel Batu Malang.",
+    description: `Paket Family Gathering Outbound Batu Malang mengombinasikan fun games antar keluarga, lomba ramah anak, kuis antar orang tua, hingga petik buah apel segar. Pilihan terbaik untuk acara arisan keluarga besar, alumni, dan komunitaskeluarga.`,
+    facilities: [
+      "Fasilitator Ramah Keluarga & Kids Animators",
+      "Fun Games Lintas Generasi (Orang Tua & Anak)",
+      "Tiket Masuk Wahana & Tiket Petik Buah",
+      "1x Makan Siang Prasmanan Khas Desa",
+      "Sewa Gazebo & Area Lapangan Rumput",
+      "Souvenir Hasil Petik Apel 1 kg/orang",
+      "Dokumentasi Foto Keluarga",
+      "Sound System & Music"
+    ],
+    itinerary: [
+      "08.30 - 09.00 : Kumpul Keluarga & Welcome Drink",
+      "09.00 - 10.30 : Fun Games Keluarga & Fun Race Anak",
+      "10.30 - 12.00 : Wisata Petik Apel Langsung dari Pohon",
+      "12.00 - 13.30 : ISHOMA & Santap Siang Prasmanan",
+      "13.30 - 15.00 : Pembagian Hadiah Games & Foto Bersama"
+    ]
+  },
+  {
+    id: "paket-outbound-kampus-organisasi",
+    title: "Paket Outbound Kampus, BEM & Makrab Organisasi",
+    category: "Kampus/Organisasi",
+    categoryLabel: "Kampus & Mahasiswa",
+    price: "Rp 135.000",
+    priceUnit: "/ mahasiswa (Min. 30 pax)",
+    location: "Bumi Perkemahan Bedengan / Pujon Malang",
+    duration: "1 Hari / 2D1N Camp",
+    badge: "MAKRAB POPULER",
+    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80",
+    shortDesc: "Pilihan terbaik untuk orientasi mahasiswa baru, makrab BEM, HIMA, dan UKM kampus dengan simulasi organisasi dan kepemimpinan.",
+    description: `Paket khusus mahasiswa dan organisasi kepemudaan di Malang. Dirancang untuk mempererat keakraban pengurus, latihan dasar kepemimpinan (LDK), manajemen konflik, serta outbound strategis dengan budget yang sangat kompetitif.`,
+    facilities: [
+      "Instruktur Outbound & Latihan Leadership",
+      "Simulasi Management Strategy Games",
+      "Izin Hutan Perkemahan / Ground Camp",
+      "1x Makan Siang / 3x Makan (opsi 2D1N)",
+      "Api Unggun & Sesi Night Reflection",
+      "Sound System Portable & Peralatan Games",
+      "Banner Makrab Organisasi",
+      "P3K Standard"
+    ],
+    itinerary: [
+      "08.00 - 08.30 : Arrival at Campsite",
+      "08.30 - 10.00 : Ice Breaking & Solidarity Games",
+      "10.00 - 12.00 : Strategy & Conflict Resolution Challenge",
+      "12.00 - 13.00 : ISHOMA",
+      "13.00 - 15.00 : High Ropes / Flying Fox & Commitment Building",
+      "15.00 - 16.00 : Closing & Organization Photo"
+    ]
+  },
+  {
+    id: "paket-outbound-paintball-batu",
+    title: "Paket Outbound + Paintball War Simulation Batu",
+    category: "Perusahaan",
+    categoryLabel: "Kombinasi War Games",
+    price: "Rp 215.000",
+    priceUnit: "/ orang (Min. 20 pax)",
+    location: "Pine Forest Coban Rondo Batu",
+    duration: "1 Hari (08.30 - 15.30 WIB)",
+    badge: "ACTION & STRATEGY",
+    image: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=1200&q=80",
+    shortDesc: "Simulasi tempur Paintball 50 peluru per peserta dikombinasikan dengan Fun Outbound Games di area hutan pinus sejuk Batu.",
+    description: `Uji strategi tempur, kecepatan mengambil keputusan, dan komunikasi tim melalui Paintball War Simulation di Hutan Pinus Coban Rondo. Dilengkapi senapan tipmann terkini, seragam militer camo, pelindung wajah, dan marshall berpengalaman.`,
+    facilities: [
+      "Senjata Paintball Semi-Otomatis Tipmann 98",
+      "50 Peluru Paintball / Peserta",
+      "Seragam Camo Militer & Goggle Pelindung Wajah",
+      "Fasilitator & Marshall Pertandingan",
+      "Area Arena Tempur Barikade Kayu & Alami",
+      "Fun Outbound Ice Breaking Games",
+      "1x Makan Siang Prasmanan",
+      "Air Mineral Mineral Galon",
+      "Asuransi & P3K"
+    ],
+    itinerary: [
+      "08.30 - 09.00 : Registrasi & Pembagian Kelompok",
+      "09.00 - 10.30 : Fun Ice Breaking & Team Strategy Building",
+      "10.30 - 12.30 : Sesi Pertandingan Paintball War Simulation",
+      "12.30 - 13.30 : ISHOMA (Makan Siang & Istirahat)",
+      "13.30 - 15.00 : Final Tournament & Awarding",
+      "15.00 - 15.30 : Penutupan"
+    ]
+  }
+];

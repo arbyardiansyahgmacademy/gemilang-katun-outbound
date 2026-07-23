@@ -1,0 +1,6 @@
+{
+  "name": "GemilangKatunOutbond - Paket Outbound & Team Building Terbaik Malang Batu",
+  "description": "Provider resmi GemilangKatunOutbond. Jasa outbound Malang, Batu, team building perusahaan, paket outbound sekolah, keluarga & organisasi terbaik di Jawa Timur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

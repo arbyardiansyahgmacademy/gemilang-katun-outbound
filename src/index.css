@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F9F9F4;
+    --bg-card: #FFFFFF;
+    --bg-accent: #F5F5F0;
+    --primary-sage: #3A5A40;
+    --secondary-sage: #5A5A40;
+    --light-sage: #A3B18A;
+    --sand-light: #DAD7CD;
+    --border-natural: #E0E0D6;
+    --text-heading: #3A5A40;
+    --text-muted: #5A5A40;
+    --text-body: #333333;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-body);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    animation: pageEnter 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+/* Page Transition Keyframes (Opacity only to prevent containing block bug on fixed elements) */
+@keyframes pageEnter {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Modal Pop Animation */
+@keyframes modalPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal-pop {
+  animation: modalPop 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbar - Natural Tones */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F9F9F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3B18A;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3A5A40;
+}
+
+/* Smooth Navbar Hover Styles */
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #5A5A40;
+  border-radius: 0.5rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover {
+  color: #3A5A40;
+  background-color: rgba(58, 90, 64, 0.08);
+  transform: translateY(-1px);
+}
+
+.nav-link.active-link {
+  color: #3A5A40;
+  font-weight: 700;
+  background-color: rgba(58, 90, 64, 0.12);
+}
+
+.nav-link.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 2.5px;
+  background-color: #3A5A40;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* Natural Tones Cards */
+.card-emerald, .card-natural {
+  background: #FFFFFF;
+  border: 1px solid #E0E0D6;
+  border-radius: 1.25rem;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px -3px rgba(58, 90, 64, 0.05);
+}
+
+.card-emerald:hover, .card-natural:hover {
+  border-color: #A3B18A;
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px -6px rgba(58, 90, 64, 0.12);
+}
+
+/* Natural Tones Buttons */
+.btn-forest, .btn-primary {
+  background: #3A5A40;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(58, 90, 64, 0.25);
+}
+
+.btn-forest:hover, .btn-primary:hover {
+  background: #2C4530;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(58, 90, 64, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-sage, .btn-secondary {
+  background: #5A5A40;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(90, 90, 64, 0.2);
+}
+
+.btn-sage:hover, .btn-secondary:hover {
+  background: #3A5A40;
+  color: #FFFFFF;
+  box-shadow: 0 6px 20px rgba(58, 90, 64, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Legacy support alias for btn-maroon to point to natural forest green button */
+.btn-maroon {
+  background: #3A5A40;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(58, 90, 64, 0.25);
+}
+
+.btn-maroon:hover {
+  background: #2C4530;
+  color: #FFFFFF;
+  box-shadow: 0 6px 22px rgba(58, 90, 64, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Natural Badge */
+.badge-sage, .badge-maroon {
+  background-color: #3A5A40;
+  color: #FFFFFF;
+}
+
+/* Pulse animation for floating WhatsApp */
+@keyframes floatPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 18px 32px rgba(37, 211, 102, 0.55);
+  }
+}
+
+.animate-wa-pulse {
+  animation: floatPulse 3s infinite ease-in-out;
+}
+
+/* Accordion FAQ active state */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+
