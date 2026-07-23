@@ -6,7 +6,7 @@ export const blogsData = [
     date: "18 Juli 2026",
     author: "Tim Outbound Malang Pro",
     readTime: "5 menit",
-    image: "/src/assets/images/hero_outbound_malang_1784793004431.jpg",
+    image: "src/assets/images/photo (15).webp",
     excerpt: "Sedang mencari provider paket outbound Malang terpercaya untuk acara kantor atau sekolah? Simak panduan lengkap lokasi terbaik, estimasi biaya, dan jenis permainan team building.",
     content: `
       <h2>Mengapa Outbound di Malang dan Batu Sangat Populer?</h2>
@@ -42,7 +42,7 @@ export const blogsData = [
     date: "12 Juli 2026",
     author: "Irwan Setiawan (Game Master)",
     readTime: "4 menit",
-    image: "/src/assets/images/paket_team_building_1784793017845.jpg",
+    image: "src/assets/images/photo (16).webp",
     excerpt: "Ulasan 5 lokasi wisata outbound tercantik di Malang dan Batu dengan udara sejuk, lapangan rumput luas, serta fasilitas lengkap untuk rombongan besar.",
     content: `
       <h2>5 Tempat Outbound Terbaik di Malang & Batu yang Wajib Dikunjungi</h2>
@@ -534,7 +534,7 @@ export const blogsData = [
     date: "18 April 2026",
     author: "Ahmad Fauzi",
     readTime: "4 menit",
-    image: "/src/assets/images/hero_outbound_malang_1784793004431.jpg",
+    image: "src/assets/images/photo (17).webp",
     excerpt: "Hutan Pinus Coban Rondo menjadi lokasi favorit untuk outbound perusahaan berkat pemandangan alam yang memukau dan fasilitas lengkap.",
     content: `
       <h2>Pesona Alam Coban Rondo yang Tak Lekang Waktu</h2>

@@ -22,7 +22,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="GemilangKatunOutbond - Outbound Seru di Malang & Batu" />
   <meta property="og:description" content="Sewa paket outbound Malang & Batu terlengkap untuk kantor, sekolah, dan keluarga bersama GemilangKatunOutbond. Fasilitator BNSP, harga terjangkau!" />
-  <meta property="og:image" content="/src/assets/images/hero_outbound_malang_1784793004431.jpg" />
+  <meta property="og:image" content="/src/assets/images/hero_outbound_malang_1784793004431.webp" />
 
   <link rel="stylesheet" href="/src/index.css" />
 
@@ -32,7 +32,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "GemilangKatunOutbond",
-    "image": "/src/assets/images/hero_outbound_malang_1784793004431.jpg",
+    "image": "/src/assets/images/hero_outbound_malang_1784793004431.webp",
     "telePhone": "+62-83115542771",
     "email": "admin@gemilangkatunoutbond.co.id",
     "address": {
@@ -70,7 +70,7 @@
   <section class="relative min-h-[85vh] flex items-center pt-8 pb-16 overflow-hidden bg-[#3A5A40]">
     <!-- Background Image with Soft Overlay -->
     <div class="absolute inset-0 z-0">
-      <img src="/src/assets/images/hero_outbound_malang_1784793004431.jpg" alt="Outbound Seru GemilangKatunOutbond Malang Batu" class="w-full h-full object-cover object-center opacity-25 blur-[1px] scale-105" />
+      <img src="src/assets/images/photo (1).webp" alt="Outbound Seru GemilangKatunOutbond Malang Batu" class="w-full h-full object-cover object-center opacity-25 blur-[1px] scale-105" />
       <div class="absolute inset-0 bg-gradient-to-r from-[#3A5A40] via-[#3A5A40]/90 to-transparent"></div>
     </div>
 
@@ -479,7 +479,7 @@
           <div class="rounded-2xl bg-white border border-[#E0E0D6] shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-all duration-300 reveal">
             <div>
               <div class="relative h-48 overflow-hidden">
-                <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="${pkg.image}" alt="${pkg.title}" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#3A5A40] text-white font-bold text-[10px] uppercase tracking-wider shadow-sm">
                   ${pkg.badge}
                 </span>
@@ -519,19 +519,19 @@
       const galleryPreviewContainer = document.getElementById('home-gallery-preview');
       const galleryImages = [
         { 
-          src: '/src/assets/images/hero_outbound_malang_1784793004431.jpg', 
+          src: 'src/assets/images/photo (13).webp', 
           title: 'High Ropes & Flying Fox Challenge', 
           cat: 'Coban Rondo Batu', 
           desc: 'Tantangan keberanian dan simulasi ketangkasan di area ketinggian hutan pinus Coban Rondo Batu Malang bersama instruktur sertifikasi BNSP.' 
         },
         { 
-          src: '/src/assets/images/paket_team_building_1784793017845.jpg', 
+          src: 'src/assets/images/photo (16).webp', 
           title: 'Corporate Team Building & Fun Games', 
           cat: 'Resort Batu Malang', 
           desc: 'Aktivitas sinergi tim, kepemimpinan, dan penyegaran karyawan perusahaan yang dikemas dengan simulasi games kreatif dan komunikatif.' 
         },
         { 
-          src: '/src/assets/images/paket_rafting_malang_1784793031028.jpg', 
+          src: 'src/assets/images/photo (20).webp', 
           title: 'Rafting 7 KM Arung Jeram Kaliwatu', 
           cat: 'Kaliwatu Batu', 
           desc: 'Pengalaman memacu adrenalin menyusuri arus sungai Kaliwatu Batu Malang lengkap dengan perlengkapan standar keamanan Internasional.' 
@@ -559,7 +559,7 @@
       if (galleryPreviewContainer) {
         galleryPreviewContainer.innerHTML = galleryImages.map((img, idx) => `
           <div class="relative h-64 sm:h-72 rounded-2xl overflow-hidden cursor-pointer border border-[#E0E0D6] group shadow-sm hover:shadow-xl transition-all duration-300 reveal" onclick="openHomePhoto(${idx})">
-            <img src="${img.src}" alt="${img.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <img src="${img.src}" alt="${img.title}" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-[#3A5A40]/95 via-[#3A5A40]/40 to-transparent flex flex-col justify-between p-5 text-white">
               <div class="flex items-center justify-between">
@@ -595,7 +595,7 @@
           <article class="rounded-2xl bg-white border border-[#E0E0D6] shadow-sm overflow-hidden flex flex-col justify-between group hover:shadow-md transition-shadow reveal">
             <div>
               <div class="relative h-40 overflow-hidden">
-                <img src="${blog.image}" alt="${blog.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="${blog.image}" alt="${blog.title}" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-white/90 text-[#3A5A40] text-[10px] font-bold border border-[#E0E0D6]">
                   ${blog.category}
                 </span>

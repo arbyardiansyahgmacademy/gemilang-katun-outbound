@@ -9,7 +9,7 @@ export const packagesData = [
     location: "Coban Rondo / Pine Forest Batu Malang",
     duration: "1 Hari (Full Day 08.00 - 16.00 WIB)",
     badge: "BEST SELLER",
-    image: "/src/assets/images/paket_team_building_1784793017845.jpg",
+    image: "src/assets/images/photo (17).webp",
     shortDesc: "Paket khusus meningkatkan sinergi, kepemimpinan, dan komunikasi antar divisi perusahaan dengan fasilitator tersertifikasi BNSP di Coban Rondo Batu Malang.",
     description: `Paket Outbound Team Building Perusahaan Malang dirancang khusus untuk meningkatkan motivasi kerja, solidaritas tim, efisiensi komunikasi, dan leadership pegawai. Menggunakan metode *Experiential Learning* berstandar nasional dengan games psikologi terpadu di kawasan hutan pinus sejuk Batu Malang.`,
     facilities: [
@@ -46,7 +46,7 @@ export const packagesData = [
     location: "Sungai Kaliwatu / Kasembon Malang",
     duration: "1 Hari (Full Day 08.00 - 17.00 WIB)",
     badge: "POPULER",
-    image: "/src/assets/images/paket_rafting_malang_1784793031028.jpg",
+    image: "src/assets/images/photo (18).webp",
     shortDesc: "Pengalaman penguji adrenalin mengarungi jeram sungai eksotis sepanjang 7-9 KM dikombinasikan dengan Fun Outbound Games di Batu Malang.",
     description: `Kombinasi sempurna antara Fun Team Building Outbound di pagi hari dan Pengarungan Rafting Arum Jeram sepanjang 7 KM di Batu Malang. Sangat cocok untuk menyegarkan pikiran dan memompa semangat tim kerja maupun komunitas.`,
     facilities: [
@@ -113,7 +113,7 @@ export const packagesData = [
     location: "Kusuma Agrowisata / Coban Talun Batu",
     duration: "1 Hari (08.30 - 15.00 WIB)",
     badge: "FUN FAMILY",
-    image: "/src/assets/images/hero_outbound_malang_1784793004431.jpg",
+    image: "src/assets/images/photo (19).webp",
     shortDesc: "Ciptakan momen keakraban keluarga besar dengan permainan lintas generasi yang seru, hangat, dan ramah anak di kebun apel Batu Malang.",
     description: `Paket Family Gathering Outbound Batu Malang mengombinasikan fun games antar keluarga, lomba ramah anak, kuis antar orang tua, hingga petik buah apel segar. Pilihan terbaik untuk acara arisan keluarga besar, alumni, dan komunitaskeluarga.`,
     facilities: [
