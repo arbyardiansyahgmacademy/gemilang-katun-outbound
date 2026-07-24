@@ -5,12 +5,12 @@ export function renderNavbar(activePage = 'home') {
   if (!navContainer) return;
 
   const links = [
-    { name: 'Beranda', href: 'index.html', key: 'home' },
-    { name: 'Tentang Kami', href: 'about.html', key: 'about' },
-    { name: 'Paket Outbound', href: 'paket.html', key: 'paket' },
-    { name: 'Galeri', href: 'gallery.html', key: 'gallery' },
-    { name: 'Blog', href: 'blog.html', key: 'blog' },
-    { name: 'Kontak', href: 'contact.html', key: 'contact' },
+    { name: 'Beranda', href: '/', key: 'home' },
+    { name: 'Tentang Kami', href: '/about', key: 'about' },
+    { name: 'Paket Outbound', href: '/paket', key: 'paket' },
+    { name: 'Galeri', href: '/gallery', key: 'gallery' },
+    { name: 'Blog', href: '/blog', key: 'blog' },
+    { name: 'Kontak', href: '/contact', key: 'contact' },
   ];
 
   const navLinksHtml = links.map(link => {

@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/(.*\\.(?:jpg|jpeg|png|webp|avif|gif|svg|ico))",
