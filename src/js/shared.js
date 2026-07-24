@@ -107,9 +107,11 @@ export function renderFooter() {
           <div class="space-y-4">
             <div class="flex items-center space-x-3">
               <div class="w-9 h-9 rounded-full bg-[#3A5A40] text-white flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L4 12h3l-3 5h6v4h4v-4h6l-3-5h3L12 2z"/>
-                </svg>
+                <img 
+                src="src/assets/images/logo.webp" 
+                alt="Logo GemilangKatunOutbond" 
+                class="w-9 h-9 object-contain" 
+                />
               </div>
               <span class="text-lg font-bold text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
             </div>
