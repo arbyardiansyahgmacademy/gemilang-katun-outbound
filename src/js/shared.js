@@ -9,7 +9,7 @@ export function renderNavbar(activePage = 'home') {
     { name: 'Tentang Kami', href: 'about.html', key: 'about' },
     { name: 'Paket Outbound', href: 'paket.html', key: 'paket' },
     { name: 'Galeri', href: 'gallery.html', key: 'gallery' },
-    { name: 'Artikel & Blog', href: 'blog.html', key: 'blog' },
+    { name: 'Blog', href: 'blog.html', key: 'blog' },
     { name: 'Kontak', href: 'contact.html', key: 'contact' },
   ];
 
@@ -29,16 +29,16 @@ export function renderNavbar(activePage = 'home') {
           
           <!-- Logo with Pine Tree Icon -->
           <a href="index.html" class="flex items-center space-x-3 group">
-            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#3A5A40] text-white flex items-center justify-center group-hover:bg-[#2C4530] transition-all duration-300 shadow-sm group-hover:scale-105">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2L4 12h3l-3 5h6v4h4v-4h6l-3-5h3L12 2z"/>
-              </svg>
-            </div>
-            <div>
-              <span class="text-lg sm:text-xl font-bold tracking-tight text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
-              <p class="text-[9px] text-[#5A5A40] font-medium tracking-widest uppercase">Provider No.1 di Malang & Batu</p>
-            </div>
-          </a>
+  <img 
+    src="src/assets/images/logo.webp" 
+    alt="Logo GemilangKatunOutbond" 
+    class="w-10 h-10 object-contain rounded-full group-hover:scale-105 transition-all duration-300" 
+  />
+  <div>
+    <span class="text-lg sm:text-xl font-bold tracking-tight text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
+    <p class="text-[9px] text-[#5A5A40] font-medium tracking-widest uppercase">Provider No.1 Batu & Malang</p>
+  </div>
+</a>
 
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex items-center space-x-2 lg:space-x-4">
