@@ -30,7 +30,7 @@ export function renderNavbar(activePage = 'home') {
           <!-- Logo with Pine Tree Icon -->
           <a href="index.html" class="flex items-center space-x-3 group">
   <img 
-    src="src/assets/images/logo.webp" 
+    src="/src/assets/images/logo.webp" 
     alt="Logo GemilangKatunOutbond" 
     class="w-10 h-10 object-contain rounded-full group-hover:scale-105 transition-all duration-300" 
   />
@@ -108,7 +108,7 @@ export function renderFooter() {
             <div class="flex items-center space-x-3">
               <div class="w-9 h-9 rounded-full bg-[#3A5A40] text-white flex items-center justify-center">
                 <img 
-                src="src/assets/images/logo.webp" 
+                src="/src/assets/images/logo.webp" 
                 alt="Logo GemilangKatunOutbond" 
                 class="w-9 h-9 object-contain" 
                 />
@@ -152,12 +152,11 @@ export function renderFooter() {
           <div>
             <h4 class="text-[#3A5A40] font-bold mb-4 text-sm tracking-wider uppercase border-b border-[#E0E0D6] pb-2 inline-block">Link Cepat</h4>
             <ul class="space-y-2.5 text-xs font-medium">
-              <li><a href="index.html" class="hover:text-[#3A5A40] transition-colors">Beranda Utama</a></li>
-              <li><a href="about.html" class="hover:text-[#3A5A40] transition-colors">Tentang Kami & Sertifikasi</a></li>
-              <li><a href="paket.html" class="hover:text-[#3A5A40] transition-colors">Daftar Paket Outbound Malang</a></li>
-              <li><a href="gallery.html" class="hover:text-[#3A5A40] transition-colors">Galeri Foto & Video Kegiatan</a></li>
-              <li><a href="blog.html" class="hover:text-[#3A5A40] transition-colors">Artikel & Panduan Wisata</a></li>
-              <li><a href="contact.html" class="hover:text-[#3A5A40] transition-colors">Hubungi Admin & Reservasi</a></li>
+              <li><a href="index.html" class="hover:text-[#3A5A40] transition-colors">Beranda</a></li>
+              <li><a href="about.html" class="hover:text-[#3A5A40] transition-colors">Tentang Kami</a></li>
+              <li><a href="paket.html" class="hover:text-[#3A5A40] transition-colors">Daftar Paket</a></li>
+              <li><a href="gallery.html" class="hover:text-[#3A5A40] transition-colors">Galeri</a></li>
+              <li><a href="blog.html" class="hover:text-[#3A5A40] transition-colors">Blog</a></li>
             </ul>
           </div>
 
@@ -581,4 +580,3 @@ if (typeof window !== 'undefined') {
     runAuto();
   }
 }
-

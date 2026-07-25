@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title id="page-title">Detail Paket Outbound | GemilangKatunOutbond</title>
-  <link rel="icon" type="image/png" href="src/assets/images/logo.webp" />
+  <title id="page-title">Paket Outbound Kampus, BEM & Makrab Organisasi - Paket Outbound Malang | GemilangKatunOutbond</title>
+  <link rel="icon" type="image/png" href="/src/assets/images/logo.webp" />
   
-  <meta name="description" id="page-desc" content="Rincian fasilitas, harga, dan rundown acara Paket Outbound GemilangKatunOutbond Malang." />
+  <meta name="description" id="page-desc" content="Pilihan terbaik untuk orientasi mahasiswa baru, makrab BEM, HIMA, dan UKM kampus dengan simulasi organisasi dan kepemimpinan." />
   <link rel="stylesheet" href="/src/index.css" />
 </head>
 <body class="bg-[#F9F9F4] text-[#333333] antialiased selection:bg-[#3A5A40] selection:text-white font-sans">
@@ -18,40 +18,35 @@
     
     <!-- Breadcrumb -->
     <div class="mb-6 flex items-center space-x-2 text-xs text-[#5A5A40]">
-      <a href="index.html" class="hover:text-[#3A5A40] hover:underline">Beranda</a>
+      <a href="/" class="hover:text-[#3A5A40] hover:underline">Beranda</a>
       <span>/</span>
-      <a href="paket.html" class="hover:text-[#3A5A40] hover:underline">Paket Outbound</a>
+      <a href="/paket" class="hover:text-[#3A5A40] hover:underline">Paket Outbound</a>
       <span>/</span>
-      <span id="breadcrumb-title" class="text-[#3A5A40] font-bold">Detail Paket</span>
+      <span id="breadcrumb-title" class="text-[#3A5A40] font-bold">Kampus & Mahasiswa</span>
     </div>
 
     <!-- Main Detail Content Card -->
     <div id="detail-card-mount" class="space-y-12">
       <!-- Injected via JS -->
     </div>
-
   </main>
 
   <!-- CTA BANNER -->
-<section class="py-16 bg-[#3A5A40] text-white text-center reveal">
-  <div class="max-w-4xl mx-auto px-4 space-y-5">
-    <h2 class="text-2xl sm:text-3xl font-serif italic text-white">
-      Konsultasikan Kebutuhan Outbound Anda Sekarang!
-    </h2>
-    <p class="text-xs sm:text-sm text-[#DAD7CD] max-w-xl mx-auto font-light leading-relaxed">
-      Tim CS kami siap membantu merancang susunan acara (rundown) dan estimasi anggaran sesuai budget Anda.
-    </p>
-    <div>
-      <a href="https://wa.me/6283115542771?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20konsultasi%20paket%20outbound" target="_blank" class="inline-flex items-center space-x-2 px-8 py-3.5 rounded-full bg-[#5A5A40] hover:bg-[#2c4530] text-white font-bold uppercase text-xs tracking-wider shadow-lg transition-all border border-white/20">
-        <span>Konsultasi Bebas Biaya via WA</span>
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-        </svg>
-      </a>
+  <section class="py-16 bg-[#3A5A40] text-white text-center reveal">
+    <div class="max-w-4xl mx-auto px-4 space-y-5">
+      <h2 class="text-2xl sm:text-3xl font-serif italic text-white">Konsultasikan Kebutuhan Outbound Anda Sekarang!</h2>
+      <p class="text-xs sm:text-sm text-[#DAD7CD] max-w-xl mx-auto font-light leading-relaxed">
+        Tim CS kami siap membantu merancang susunan acara (rundown) dan estimasi anggaran sesuai budget Anda.
+      </p>
+      <div>
+        <a href="https://wa.me/6283115542771?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20konsultasi%20paket%20outbound" target="_blank" class="inline-flex items-center space-x-2 px-8 py-3.5 rounded-full bg-[#5A5A40] hover:bg-[#2c4530] text-white font-bold uppercase text-xs tracking-wider shadow-lg transition-all border border-white/20">
+          <span>Konsultasi Bebas Biaya via WA</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-  <!-- Mount Footer -->
+  </section>
+
   <div id="footer-mount"></div>
 
   <script type="module">
@@ -63,22 +58,16 @@
       renderFooter();
       renderFloatingWA();
 
-      const urlParams = new URLSearchParams(window.location.search);
-      const pkgId = urlParams.get('id') || packagesData[0].id;
-
+      const pkgId = "paket-outbound-kampus-organisasi";
       const pkg = packagesData.find(p => p.id === pkgId) || packagesData[0];
 
-      // Update page titles
       document.getElementById('page-title').textContent = `${pkg.title} | GemilangKatunOutbond`;
       document.getElementById('breadcrumb-title').textContent = pkg.categoryLabel || pkg.title;
 
       const mount = document.getElementById('detail-card-mount');
-      if (mount) {
+      if (mount && pkg) {
         mount.innerHTML = `
-          <!-- Top Hero Grid -->
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start reveal">
-            
-            <!-- Large Image -->
             <div class="lg:col-span-7">
               <div class="rounded-3xl overflow-hidden border border-[#E0E0D6] shadow-md relative">
                 <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-[380px] sm:h-[450px] object-cover" />
@@ -92,15 +81,12 @@
               </div>
             </div>
 
-            <!-- Right Key Info Box -->
             <div class="lg:col-span-5 p-6 sm:p-8 rounded-3xl bg-white border border-[#E0E0D6] shadow-sm space-y-6">
-              
               <div class="space-y-1.5">
                 <span class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest block">${pkg.categoryLabel}</span>
                 <h1 class="text-2xl sm:text-3xl font-serif font-bold text-[#3A5A40] leading-tight">${pkg.title}</h1>
               </div>
 
-              <!-- Price Box -->
               <div class="p-4 rounded-2xl bg-[#F5F5F0] border border-[#E0E0D6] space-y-1">
                 <span class="text-xs text-[#5A5A40] block">Biaya Investasi Program:</span>
                 <div class="text-2xl sm:text-3xl font-bold text-[#3A5A40]">
@@ -114,7 +100,6 @@
 
               <p class="text-xs sm:text-sm text-[#5A5A40] leading-relaxed font-light">${pkg.description}</p>
 
-              <!-- Action Buttons -->
               <div class="space-y-3 pt-2">
                 <button onclick="window.bookingTrigger('${pkg.id}')" class="w-full py-3.5 rounded-full bg-[#3A5A40] hover:bg-[#2C4530] text-white font-bold uppercase text-xs tracking-wider flex items-center justify-center space-x-2 shadow-md transition-colors">
                   <span>Pesan Sekarang via WA Admin</span>
@@ -126,15 +111,10 @@
                   <span>Minta Proposal PDF Resmi</span>
                 </a>
               </div>
-
             </div>
-
           </div>
 
-          <!-- Bottom Grid: Fasilitas & Rundown -->
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-[#E0E0D6] reveal">
-            
-            <!-- Fasilitas Included -->
             <div class="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-white border border-[#E0E0D6] shadow-sm space-y-4">
               <h3 class="text-lg font-serif font-bold text-[#3A5A40] flex items-center space-x-2">
                 <span class="w-6 h-6 rounded-full bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center text-xs font-bold">✓</span>
@@ -150,7 +130,6 @@
               </ul>
             </div>
 
-            <!-- Rundown / Itinerary -->
             <div class="lg:col-span-6 p-6 sm:p-8 rounded-3xl bg-white border border-[#E0E0D6] shadow-sm space-y-4">
               <h3 class="text-lg font-serif font-bold text-[#3A5A40] flex items-center space-x-2">
                 <span class="w-6 h-6 rounded-full bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center text-xs">
@@ -167,18 +146,17 @@
                 `).join('')}
               </div>
             </div>
-
           </div>
         `;
 
         initScrollReveal();
       }
-
-      window.bookingTrigger = (pId) => {
-        openBookingModal(pkg);
-      };
     });
+
+    window.bookingTrigger = (pId) => {
+      const pkg = packagesData.find(p => p.id === pId) || packagesData[0];
+      openBookingModal(pkg);
+    };
   </script>
 </body>
 </html>
-

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title id="page-title">Detail Paket Outbound | GemilangKatunOutbond</title>
-  <link rel="icon" type="image/png" href="src/assets/images/logo.webp" />
+  <title id="page-title">Paket Outbound Team Building Perusahaan Malang - Paket Outbound Malang | GemilangKatunOutbond</title>
+  <link rel="icon" type="image/png" href="/src/assets/images/logo.webp" />
   
-  <meta name="description" id="page-desc" content="Rincian fasilitas, harga, dan rundown acara Paket Outbound GemilangKatunOutbond Malang." />
+  <meta name="description" id="page-desc" content="Paket khusus meningkatkan sinergi, kepemimpinan, dan komunikasi antar divisi perusahaan dengan fasilitator tersertifikasi BNSP di Coban Rondo Batu Malang." />
   <link rel="stylesheet" href="/src/index.css" />
 </head>
 <body class="bg-[#F9F9F4] text-[#333333] antialiased selection:bg-[#3A5A40] selection:text-white font-sans">
@@ -18,9 +18,9 @@
     
     <!-- Breadcrumb -->
     <div class="mb-6 flex items-center space-x-2 text-xs text-[#5A5A40]">
-      <a href="index.html" class="hover:text-[#3A5A40] hover:underline">Beranda</a>
+      <a href="/" class="hover:text-[#3A5A40] hover:underline">Beranda</a>
       <span>/</span>
-      <a href="paket.html" class="hover:text-[#3A5A40] hover:underline">Paket Outbound</a>
+      <a href="/paket" class="hover:text-[#3A5A40] hover:underline">Paket Outbound</a>
       <span>/</span>
       <span id="breadcrumb-title" class="text-[#3A5A40] font-bold">Detail Paket</span>
     </div>
@@ -64,7 +64,7 @@
       renderFloatingWA();
 
       const urlParams = new URLSearchParams(window.location.search);
-      const pkgId = urlParams.get('id') || packagesData[0].id;
+      const pkgId = "paket-outbound-perusahaan-malang";
 
       const pkg = packagesData.find(p => p.id === pkgId) || packagesData[0];
 
@@ -181,4 +181,3 @@
   </script>
 </body>
 </html>
-
