@@ -176,7 +176,7 @@ export const packagesData = [
     location: "Pine Forest Coban Rondo Batu",
     duration: "1 Hari (08.30 - 15.30 WIB)",
     badge: "ACTION & STRATEGY",
-    image: "/assets/images/photo (13).webp",
+    image: "/assets/images/gambarr_2.webp",
     shortDesc: "Simulasi tempur Paintball 50 peluru per peserta dikombinasikan dengan Fun Outbound Games di area hutan pinus sejuk Batu.",
     description: `Uji strategi tempur, kecepatan mengambil keputusan, dan komunikasi tim melalui Paintball War Simulation di Hutan Pinus Coban Rondo. Dilengkapi senapan tipmann terkini, seragam militer camo, pelindung wajah, dan marshall berpengalaman.`,
     facilities: [
