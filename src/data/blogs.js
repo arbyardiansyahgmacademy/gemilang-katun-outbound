@@ -5,10 +5,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "18 Juli 2026",
     author: "Tim Outbound Malang Pro",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "/src/assets/images/photo (15).webp",
+    image: "/assets/images/gambarr_20.webp",
     excerpt: "Sedang mencari provider paket outbound Malang terpercaya untuk acara kantor atau sekolah? Simak panduan lengkap lokasi terbaik, estimasi biaya, dan jenis permainan team building.",
     content: `
       <h2>Mengapa Outbound di Malang dan Batu Sangat Populer?</h2>
@@ -43,10 +43,10 @@ export const blogsData = [
     category: "Rekomendasi Lokasi",
     date: "12 Juli 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "/src/assets/images/photo (16).webp",
+    image: "/assets/images/gambarr_19.webp",
     excerpt: "Ulasan 5 lokasi wisata outbound tercantik di Malang dan Batu dengan udara sejuk, lapangan rumput luas, serta fasilitas lengkap untuk rombongan besar.",
     content: `
       <h2>5 Tempat Outbound Terbaik di Malang & Batu yang Wajib Dikunjungi</h2>
@@ -74,10 +74,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "05 Juli 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "6 menit",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_18.webp",
     excerpt: "Mengapa investasi acara tahunan outbound sangat krusial bagi produktivitas tim bisnis Anda? Temukan fakta psikologis di baliknya.",
     content: `
       <h2>Mengapa Perusahaan Perlu Rutin Mengadakan Outbound?</h2>
@@ -99,10 +99,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "01 Juli 2026",
     author: "Budi Santoso",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_17.webp",
     excerpt: "Banyak panitia acara kecewa karena salah pilih vendor outbound. Berikut ciri-ciri penyedia jasa outbound Malang yang profesional dan patut Anda pertimbangkan.",
     content: `
       <h2>Kenapa Memilih Vendor Outbound Tidak Boleh Sembarangan?</h2>
@@ -133,10 +133,10 @@ export const blogsData = [
     category: "Games & Aktivitas",
     date: "27 Juni 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "6 menit",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_16.webp",
     excerpt: "Bingung menentukan games outbound apa yang cocok untuk tim kantor Anda? Simak kumpulan permainan populer beserta manfaat masing-masing.",
     content: `
       <h2>Kumpulan Games Outbound Favorit untuk Acara Perusahaan</h2>
@@ -166,10 +166,10 @@ export const blogsData = [
     category: "Edukasi",
     date: "22 Juni 2026",
     author: "Dewi Lestari, S.Pd",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_15.webp",
     excerpt: "Kegiatan outbound sekolah bukan sekadar bermain, tapi sarana edukasi karakter. Simak perbedaan program untuk tiap jenjang usia siswa.",
     content: `
       <h2>Outbound Sekolah Sebagai Sarana Pendidikan Karakter</h2>
@@ -197,10 +197,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "17 Juni 2026",
     author: "Ahmad Fauzi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_14.webp",
     excerpt: "Punya budget terbatas namun tetap ingin acara makrab atau LDK organisasi berkesan? Berikut tips memilih paket outbound hemat di Malang.",
     content: `
       <h2>Outbound Hemat Bukan Berarti Murahan</h2>
@@ -227,10 +227,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "12 Juni 2026",
     author: "Tim Outbound Malang Pro",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_13.webp",
     excerpt: "Agar acara outbound berjalan lancar dan nyaman, ada beberapa hal yang perlu dipersiapkan peserta maupun panitia sebelum hari-H.",
     content: `
       <h2>Persiapan Penting Sebelum Berangkat Outbound</h2>
@@ -261,10 +261,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "07 Juni 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_12.webp",
     excerpt: "Ketiga istilah ini sering dianggap sama, padahal tujuan dan pendekatannya cukup berbeda. Simak penjelasan lengkapnya sebelum menentukan acara kantor Anda.",
     content: `
       <h2>Memahami Perbedaan Istilah yang Sering Tertukar</h2>
@@ -289,10 +289,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "02 Juni 2026",
     author: "Budi Santoso",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1428592953211-077101b2021b?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_11.webp",
     excerpt: "Musim hujan bukan halangan untuk tetap mengadakan acara outbound. Simak strategi antisipasi cuaca agar acara tetap berjalan lancar.",
     content: `
       <h2>Jangan Batalkan Rencana Outbound Hanya Karena Musim Hujan</h2>
@@ -320,10 +320,10 @@ export const blogsData = [
     category: "Panduan Wisata",
     date: "28 Mei 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "/src/assets/images/photo (13).webp",
+    image: "/assets/images/gambarr_10.webp",
     excerpt: "Rafting Kasembon menjadi favorit wisatawan pencari adrenalin di Malang. Kenali rute, tingkat kesulitan, dan tips keamanan sebelum mencoba.",
     content: `
       <h2>Mengenal Rafting Kasembon, Ikon Wisata Air Malang</h2>
@@ -353,10 +353,10 @@ export const blogsData = [
     category: "Panduan Wisata",
     date: "23 Mei 2026",
     author: "Ahmad Fauzi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_9.webp",
     excerpt: "Paintball menjadi salah satu aktivitas favorit dalam paket outbound perusahaan di Malang. Kenali aturan main dan tips keselamatannya di sini.",
     content: `
       <h2>Paintball, Simulasi Strategi Tim yang Memacu Adrenalin</h2>
@@ -385,10 +385,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "18 Mei 2026",
     author: "Budi Santoso",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_8.webp",
     excerpt: "Flying fox dan high rope adalah wahana favorit dalam paket outbound, namun tetap membutuhkan kewaspadaan ekstra. Ini panduan keselamatannya.",
     content: `
       <h2>Wahana Menantang yang Perlu Kewaspadaan Ekstra</h2>
@@ -417,10 +417,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "13 Mei 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_7.webp",
     excerpt: "Kepemimpinan bukan hanya soal jabatan. Simak bagaimana simulasi outbound dapat memunculkan potensi leadership tersembunyi dalam diri karyawan.",
     content: `
       <h2>Leadership Bukan Bawaan, Tapi Bisa Dilatih</h2>
@@ -445,10 +445,10 @@ export const blogsData = [
     category: "Games & Aktivitas",
     date: "08 Mei 2026",
     author: "Dewi Lestari, S.Pd",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_6.webp",
     excerpt: "Family gathering menghadirkan tantangan tersendiri karena melibatkan anak-anak hingga lansia. Berikut ide games yang ramah untuk segala usia.",
     content: `
       <h2>Family Gathering, Momen Kebersamaan Lintas Generasi</h2>
@@ -476,10 +476,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "03 Mei 2026",
     author: "Budi Santoso",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_5.webp",
     excerpt: "Perencanaan anggaran yang matang membantu divisi HRD menghindari pembengkakan biaya acara outbound. Ini komponen yang perlu diperhitungkan.",
     content: `
       <h2>Komponen Utama Anggaran Acara Outbound</h2>
@@ -511,10 +511,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "28 April 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_4.webp",
     excerpt: "Di balik acara outbound yang seru dan bermakna, ada peran fasilitator dan game master yang menentukan kualitas pengalaman peserta.",
     content: `
       <h2>Lebih dari Sekadar Pemandu Permainan</h2>
@@ -539,10 +539,10 @@ export const blogsData = [
     category: "Edukasi",
     date: "23 April 2026",
     author: "Dewi Lestari, S.Pd",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "/src/assets/images/photo (14).webp",
+    image: "/assets/images/gambarr_3.webp",
     excerpt: "Pendidikan karakter tidak selalu harus di dalam kelas. Outbound edukasi menjadi alternatif metode belajar aktif yang efektif membentuk mental positif siswa.",
     content: `
       <h2>Belajar di Luar Ruang Kelas Lebih Membekas</h2>
@@ -569,10 +569,10 @@ export const blogsData = [
     category: "Rekomendasi Lokasi",
     date: "18 April 2026",
     author: "Ahmad Fauzi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "/src/assets/images/photo (17).webp",
+    image: "/assets/images/gambarr_2.webp",
     excerpt: "Hutan Pinus Coban Rondo menjadi lokasi favorit untuk outbound perusahaan berkat pemandangan alam yang memukau dan fasilitas lengkap.",
     content: `
       <h2>Pesona Alam Coban Rondo yang Tak Lekang Waktu</h2>
@@ -597,10 +597,10 @@ export const blogsData = [
     category: "Rekomendasi Lokasi",
     date: "13 April 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_1.webp",
     excerpt: "Kusuma Agrowisata menggabungkan konsep outbound dengan wisata petik buah apel dan stroberi, cocok untuk family gathering maupun team building.",
     content: `
       <h2>Perpaduan Unik Outbound dan Agrowisata</h2>
@@ -625,10 +625,10 @@ export const blogsData = [
     category: "Rekomendasi Lokasi",
     date: "08 April 2026",
     author: "Ahmad Fauzi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_14.webp",
     excerpt: "Bagi yang mencari suasana lebih otentik dan dekat sungai jernih, Bedengan Pujon menjadi lokasi camping outbound favorit mahasiswa dan komunitas.",
     content: `
       <h2>Suasana Otentik di Tepi Sungai Pujon</h2>
@@ -653,10 +653,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "03 April 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_4.webp",
     excerpt: "Setiap metode pelatihan memiliki kelebihan masing-masing. Simak perbandingan efektivitas outdoor training di alam terbuka versus indoor training konvensional.",
     content: `
       <h2>Dua Pendekatan Berbeda, Tujuan yang Sama</h2>
@@ -681,10 +681,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "29 Maret 2026",
     author: "Budi Santoso",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1552664688-cf412ec27db2?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_12.webp",
     excerpt: "Banyak HRD kesulitan mengukur ROI acara outbound. Berikut metode evaluasi yang bisa diterapkan untuk melihat dampak nyata program tersebut.",
     content: `
       <h2>Mengapa Evaluasi Outbound Sering Terlewat?</h2>
@@ -709,10 +709,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "24 Maret 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_15.webp",
     excerpt: "Simak studi kasus bagaimana sebuah tim startup dengan masalah komunikasi internal berhasil bertransformasi setelah mengikuti program outbound terarah.",
     content: `
       <h2>Latar Belakang Tantangan Tim</h2>
@@ -737,10 +737,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "19 Maret 2026",
     author: "Ahmad Fauzi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "/src/assets/images/photo (15).webp",
+    image: "/assets/images/gambarr_13.webp",
     excerpt: "Startup dengan tim kecil tetap bisa merasakan manfaat outbound tanpa perlu anggaran besar. Berikut strategi menyesuaikan program dengan skala tim.",
     content: `
       <h2>Outbound Tidak Harus untuk Rombongan Besar</h2>
@@ -765,10 +765,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "14 Maret 2026",
     author: "Dewi Lestari, S.Pd",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "3 menit",
-    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_16.webp",
     excerpt: "Salah satu penyebab peserta kurang nyaman saat outbound adalah persiapan barang bawaan yang kurang tepat. Simak checklist lengkapnya.",
     content: `
       <h2>Checklist Barang Bawaan Wajib Outbound</h2>
@@ -805,10 +805,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "09 Maret 2026",
     author: "Tim Outbound Malang Pro",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_17.webp",
     excerpt: "Pemilihan waktu yang tepat sangat memengaruhi kenyamanan acara outbound. Simak kalender musim terbaik untuk kegiatan outdoor di Malang dan Batu.",
     content: `
       <h2>Kalender Cuaca Malang untuk Perencanaan Outbound</h2>
@@ -833,10 +833,10 @@ export const blogsData = [
     category: "Panduan Wisata",
     date: "04 Maret 2026",
     author: "Irwan Setiawan (Game Master)",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_10.webp",
     excerpt: "Sudah capek bermain outbound, saatnya memanjakan lidah dengan kuliner khas Malang. Berikut rekomendasi kuliner yang wajib dicicipi rombongan Anda.",
     content: `
       <h2>Melengkapi Acara Outbound dengan Sajian Kuliner Lokal</h2>
@@ -861,10 +861,10 @@ export const blogsData = [
     category: "Corporate Insights",
     date: "27 Februari 2026",
     author: "Siti Rahmawati, M.Psi",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "4 menit",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_5.webp",
     excerpt: "Di era kerja remote dan hybrid, banyak perusahaan mencari format alternatif team building. Bagaimana konsep outbound virtual dan hybrid bekerja?",
     content: `
       <h2>Tantangan Team Building di Era Kerja Jarak Jauh</h2>
@@ -889,10 +889,10 @@ export const blogsData = [
     category: "Tips Outbound",
     date: "22 Februari 2026",
     author: "Tim Outbound Malang Pro",
-    authorAvatar: "/src/assets/images/author.webp",
+    authorAvatar: "/assets/images/author.webp",
     authorBio: "Tim Fasilitator & Instruktur Senior GemilangKatunOutbond. Berpengalaman lebih dari 8 tahun memandu kegiatan Team Building, Family Gathering, Rafting, dan Adventure Training untuk ratusan instansi dan perusahaan di Malang Batu.",
     readTime: "5 menit",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/gambarr_11.webp",
     excerpt: "Kumpulan pertanyaan umum calon peserta dan panitia acara seputar kegiatan outbound di Malang, mulai dari harga hingga jadwal terbaik.",
     content: `
       <h2>Pertanyaan Umum Seputar Kegiatan Outbound</h2>

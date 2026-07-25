@@ -7,8 +7,25 @@ const rootDir = process.cwd();
 const paketDir = path.join(rootDir, 'paket');
 const blogDir = path.join(rootDir, 'blog');
 
-if (!fs.existsSync(paketDir)) fs.mkdirSync(paketDir, { recursive: true });
-if (!fs.existsSync(blogDir)) fs.mkdirSync(blogDir, { recursive: true });
+// Ensure image directories exist and copy all images to public
+const srcImgDir = path.join(rootDir, 'src', 'assets', 'images');
+const pubImgDir = path.join(rootDir, 'public', 'assets', 'images');
+const pubSrcImgDir = path.join(rootDir, 'public', 'src', 'assets', 'images');
+
+[pubImgDir, pubSrcImgDir, paketDir, blogDir].forEach(dir => {
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+});
+
+if (fs.existsSync(srcImgDir)) {
+  fs.readdirSync(srcImgDir).forEach(file => {
+    const srcFile = path.join(srcImgDir, file);
+    if (fs.statSync(srcFile).isFile()) {
+      fs.copyFileSync(srcFile, path.join(pubImgDir, file));
+      fs.copyFileSync(srcFile, path.join(pubSrcImgDir, file));
+    }
+  });
+  console.log('Successfully synchronized all image assets to public folders.');
+}
 
 const paketTemplate = fs.readFileSync(path.join(rootDir, 'paket-detail.html'), 'utf-8');
 const blogTemplate = fs.readFileSync(path.join(rootDir, 'blog-detail.html'), 'utf-8');
@@ -16,15 +33,12 @@ const blogTemplate = fs.readFileSync(path.join(rootDir, 'blog-detail.html'), 'ut
 const escapeAttr = (str) => (str || '').replace(/"/g, '&quot;');
 
 const cleanPath = (url, fallback = '/assets/images/hero_outbound_malang_1784793004431.webp') => {
-  if (!url || url.includes('photo_.webp')) return fallback;
+  if (!url) return fallback;
   if (url.startsWith('http://') || url.startsWith('https://')) return url;
-  let clean = url;
-  if (clean.includes('/assets/images/')) {
-    clean = '/assets/images/' + clean.split('/assets/images/')[1];
-  } else if (!clean.startsWith('/')) {
-    clean = '/' + clean;
-  }
-  return encodeURI(clean);
+  let filename = url.split('/').pop().replace(/%20/g, ' ');
+  filename = filename.replace(/photo\s*\((\d+)\)\.webp/g, 'photo_$1.webp');
+  if (!filename || filename === 'photo_.webp' || filename.includes('photo_.webp') || filename.includes('undefined')) return fallback;
+  return '/assets/images/' + filename;
 };
 
 // 1. GENERATE PAKET STATIC HTML PAGES

@@ -9,7 +9,7 @@ export const packagesData = [
     location: "Coban Rondo / Pine Forest Batu Malang",
     duration: "1 Hari (Full Day 08.00 - 16.00 WIB)",
     badge: "BEST SELLER",
-    image: "/src/assets/images/photo (17).webp",
+    image: "/assets/images/gambarr_16.webp",
     shortDesc: "Paket khusus meningkatkan sinergi, kepemimpinan, dan komunikasi antar divisi perusahaan dengan fasilitator tersertifikasi BNSP di Coban Rondo Batu Malang.",
     description: `Paket Outbound Team Building Perusahaan Malang dirancang khusus untuk meningkatkan motivasi kerja, solidaritas tim, efisiensi komunikasi, dan leadership pegawai. Menggunakan metode *Experiential Learning* berstandar nasional dengan games psikologi terpadu di kawasan hutan pinus sejuk Batu Malang.`,
     facilities: [
@@ -46,7 +46,7 @@ export const packagesData = [
     location: "Sungai Kaliwatu / Kasembon Malang",
     duration: "1 Hari (Full Day 08.00 - 17.00 WIB)",
     badge: "POPULER",
-    image: "/src/assets/images/photo (18).webp",
+    image: "/assets/images/gambarr_15.webp",
     shortDesc: "Pengalaman penguji adrenalin mengarungi jeram sungai eksotis sepanjang 7-9 KM dikombinasikan dengan Fun Outbound Games di Batu Malang.",
     description: `Kombinasi sempurna antara Fun Team Building Outbound di pagi hari dan Pengarungan Rafting Arum Jeram sepanjang 7 KM di Batu Malang. Sangat cocok untuk menyegarkan pikiran dan memompa semangat tim kerja maupun komunitas.`,
     facilities: [
@@ -81,7 +81,7 @@ export const packagesData = [
     location: "Taman Rekreasi Selecta / Songgoriti Batu",
     duration: "Half Day (08.00 - 13.00 WIB)",
     badge: "FAVORIT SEKOLAH",
-    image: "/src/assets/images/photo (20).webp",
+    image: "/assets/images/photo (15).webp",
     shortDesc: "Program pembentukan karakter, kemandirian, kedisiplinan, dan teamwork untuk siswa SD, SMP, SMA di alam terbuka Malang Batu.",
     description: `Paket Outbound Sekolah Malang difokuskan pada pengembangan kemandirian, kepemimpinan muda, empati sosial, serta kekompakan kelas. Dikemas dengan fun educational games interaktif yang aman dan menyenangkan di bawah pengawasan instruktur sabar dan berpengalaman.`,
     facilities: [
@@ -113,7 +113,7 @@ export const packagesData = [
     location: "Kusuma Agrowisata / Coban Talun Batu",
     duration: "1 Hari (08.30 - 15.00 WIB)",
     badge: "FUN FAMILY",
-    image: "/src/assets/images/photo (19).webp",
+    image: "/assets/images/gambarr_1.webp",
     shortDesc: "Ciptakan momen keakraban keluarga besar dengan permainan lintas generasi yang seru, hangat, dan ramah anak di kebun apel Batu Malang.",
     description: `Paket Family Gathering Outbound Batu Malang mengombinasikan fun games antar keluarga, lomba ramah anak, kuis antar orang tua, hingga petik buah apel segar. Pilihan terbaik untuk acara arisan keluarga besar, alumni, dan komunitaskeluarga.`,
     facilities: [
@@ -144,7 +144,7 @@ export const packagesData = [
     location: "Bumi Perkemahan Bedengan / Pujon Malang",
     duration: "1 Hari / 2D1N Camp",
     badge: "MAKRAB POPULER",
-    image: "/src/assets/images/photo (6).webp",
+    image: "/assets/images/photo (14).webp",
     shortDesc: "Pilihan terbaik untuk orientasi mahasiswa baru, makrab BEM, HIMA, dan UKM kampus dengan simulasi organisasi dan kepemimpinan.",
     description: `Paket khusus mahasiswa dan organisasi kepemudaan di Malang. Dirancang untuk mempererat keakraban pengurus, latihan dasar kepemimpinan (LDK), manajemen konflik, serta outbound strategis dengan budget yang sangat kompetitif.`,
     facilities: [
@@ -176,7 +176,7 @@ export const packagesData = [
     location: "Pine Forest Coban Rondo Batu",
     duration: "1 Hari (08.30 - 15.30 WIB)",
     badge: "ACTION & STRATEGY",
-    image: "https://images.unsplash.com/photo-1511882150382-421056c89033?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/images/photo (13).webp",
     shortDesc: "Simulasi tempur Paintball 50 peluru per peserta dikombinasikan dengan Fun Outbound Games di area hutan pinus sejuk Batu.",
     description: `Uji strategi tempur, kecepatan mengambil keputusan, dan komunikasi tim melalui Paintball War Simulation di Hutan Pinus Coban Rondo. Dilengkapi senapan tipmann terkini, seragam militer camo, pelindung wajah, dan marshall berpengalaman.`,
     facilities: [
