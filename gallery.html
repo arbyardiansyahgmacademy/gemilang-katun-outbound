@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galeri Outbound Malang Batu | GemilangKatunOutbond</title>
-  <link rel="icon" type="image/png" href="src/assets/images/logo.webp" />
+  <link rel="icon" type="image/png" href="/assets/images/logoo.webp" />
   
   <meta name="description" content="Dokumentasi foto dan video asli kegiatan outbound, team building, rafting, & family gathering GemilangKatunOutbond Malang Batu." />
   <meta name="keywords" content="gemilangkatunoutbond, galeri outbound malang, foto outbound batu, foto team building malang" />
@@ -12,19 +12,19 @@
 
   <link rel="stylesheet" href="/src/index.css" />
 </head>
-<body class="bg-[#F9F9F4] text-[#333333] antialiased selection:bg-[#3A5A40] selection:text-white font-sans">
+<body class="bg-[#0B132B] text-[#E2E8F0] antialiased selection:bg-[#2563EB] selection:text-white font-sans">
 
   <!-- Mount Navbar -->
   <div id="navbar-mount"></div>
 
   <!-- HEADER BANNER -->
-  <section class="py-16 bg-[#3A5A40] text-white text-center relative reveal">
+  <section class="py-16 bg-[#0B132B] border-b border-[#1E2F4D] text-white text-center relative reveal">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-      <span class="inline-block px-3.5 py-1 rounded-full bg-[#5A5A40]/40 border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
+      <span class="inline-block px-3.5 py-1 rounded-full bg-[#2563EB]/20 border border-[#2563EB]/40 text-[#38BDF8] text-xs font-bold uppercase tracking-widest">
         Dokumentasi GemilangKatunOutbond
       </span>
       <h1 class="text-3xl sm:text-4xl font-serif font-bold text-white italic">Galeri Outbound Malang Batu</h1>
-      <p class="text-xs sm:text-sm text-[#DAD7CD] max-w-2xl mx-auto font-light leading-relaxed">
+      <p class="text-xs sm:text-sm text-[#94A3B8] max-w-2xl mx-auto font-light leading-relaxed">
         Koleksi momen seru, keceriaan, dan kekompakan tim selama mengikuti program di Malang dan Batu. Klik pada gambar untuk memperbesar & geser foto!
       </p>
     </div>
@@ -52,49 +52,49 @@
 
       const galleryData = [
         { 
-          src: 'src/assets/images/photo (14).webp', 
+          src: '/assets/images/photo (14).webp', 
           title: 'Flying Fox & High Ropes Coban Rondo', 
           cat: 'Coban Rondo Batu', 
           desc: 'Simulasi ketangkasan, melatih fokus, dan tantangan keberanian melewati wahana kawat gantung di tengah kesejukan hutan pinus Coban Rondo Batu Malang.' 
         },
         { 
-          src: 'src/assets/images/photo (16).webp', 
+          src: '/assets/images/photo (16).webp', 
           title: 'Corporate Team Building PT Petrokimia', 
           cat: 'Resort Batu Malang', 
           desc: 'Kegiatan pemantapan kerjasama tim, problem solving, dan sinergi karyawan instansi perusahaan bersama fasilitator sertifikasi BNSP.' 
         },
         { 
-          src: 'src/assets/images/photo (18).webp', 
+          src: '/assets/images/photo (18).webp', 
           title: 'Rafting 7 KM Kaliwatu Arung Jeram', 
           cat: 'Kaliwatu Batu', 
           desc: 'Keseruan arung jeram menyusuri riam sungai Kaliwatu Batu Malang sejauh 7 KM lengkap dengan skippers handal dan perlengkapan safety.' 
         },
         { 
-          src: 'src/assets/images/photo (12).webp', 
+          src: '/assets/images/photo (12).webp', 
           title: 'Outbound Edukasi Siswa SMA 1 Malang', 
           cat: 'Selecta Batu', 
           desc: 'Program latihan kepemimpinan dasar (LDK), kedisiplinan, dan kekompakan siswa di lingkungan terbuka asri Selecta Kota Batu.' 
         },
         { 
-          src: 'src/assets/images/photo (7).webp', 
+          src: '/assets/images/photo (7).webp', 
           title: 'Simulasi Tempur Paintball Hutan Pinus', 
           cat: 'Coban Rondo Batu', 
           desc: 'Strategi perang dan adu taktik tim menggunakan senjata paintball ramah lingkungan dengan perlengkapan goggle dan pelindung badan penuh.' 
         },
         { 
-          src: 'src/assets/images/photo (6).webp', 
+          src: '/assets/images/photo (6).webp', 
           title: 'Camping & Makrab BEM Universitas Malang', 
           cat: 'Bedengan Malang', 
           desc: 'Malam keakraban, api unggun, dan perkemahan di tepi sungai Bedengan Dau Malang yang melatih kemandirian serta jiwa kebersamaan.' 
         },
         { 
-          src: 'src/assets/images/photo (2).webp', 
+          src: '/assets/images/photo (2).webp', 
           title: 'Family Gathering Petik Apel Agrowisata', 
           cat: 'Agrowisata Batu', 
           desc: 'Momen kehangatan keluarga dan komunitas menikmati wisata edukasi petik apel segar langsung dari kebun khas Kota Batu.' 
         },
         { 
-          src: 'src/assets/images/photo (15).webp', 
+          src: '/assets/images/photo (15).webp', 
           title: 'Fun Games Ice Breaking & Energizer', 
           cat: 'Tirta Nirwana Batu', 
           desc: 'Rangkaian permainan pembuka yang meriah dan penuh tawa untuk mencairkan suasana sebelum memasuki sesi materi utama.' 
@@ -104,14 +104,14 @@
       const grid = document.getElementById('gallery-grid');
       if (grid) {
         grid.innerHTML = galleryData.map((item, idx) => `
-          <div class="rounded-2xl bg-white border border-[#E0E0D6] shadow-sm overflow-hidden group cursor-pointer relative hover:shadow-md transition-all duration-300 reveal" onclick="openGalleryPhoto(${idx})">
+          <div class="rounded-2xl bg-[#131F37] border border-[#1E2F4D] shadow-sm overflow-hidden group cursor-pointer relative hover:border-[#2563EB] transition-all duration-300 reveal" onclick="openGalleryPhoto(${idx})">
             <div class="h-52 overflow-hidden">
               <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             </div>
-            <div class="absolute inset-0 bg-[#3A5A40]/85 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
-              <span class="text-[10px] font-bold text-[#A3B18A] uppercase tracking-widest block">${item.cat}</span>
+            <div class="absolute inset-0 bg-[#0B132B]/90 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+              <span class="text-[10px] font-bold text-[#38BDF8] uppercase tracking-widest block">${item.cat}</span>
               <h3 class="text-xs font-bold text-white leading-tight">${item.title}</h3>
-              <p class="text-[10px] text-[#DAD7CD] mt-1 font-light flex items-center space-x-1">
+              <p class="text-[10px] text-[#94A3B8] mt-1 font-light flex items-center space-x-1">
                 <svg class="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                 <span>Buka foto & geser</span>
               </p>
@@ -129,5 +129,3 @@
   </script>
 </body>
 </html>
-
-

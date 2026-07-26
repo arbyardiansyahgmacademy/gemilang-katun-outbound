@@ -2,17 +2,17 @@
 
 @layer base {
   :root {
-    --bg-main: #F9F9F4;
-    --bg-card: #FFFFFF;
-    --bg-accent: #F5F5F0;
-    --primary-sage: #3A5A40;
-    --secondary-sage: #5A5A40;
-    --light-sage: #A3B18A;
-    --sand-light: #DAD7CD;
-    --border-natural: #E0E0D6;
-    --text-heading: #3A5A40;
-    --text-muted: #5A5A40;
-    --text-body: #333333;
+    --bg-main: #0B132B;
+    --bg-card: #131F37;
+    --bg-accent: #111D38;
+    --primary-navy: #1D4ED8;
+    --primary-blue: #2563EB;
+    --light-blue: #38BDF8;
+    --slate-muted: #94A3B8;
+    --border-navy: #1E2F4D;
+    --text-heading: #FFFFFF;
+    --text-muted: #94A3B8;
+    --text-body: #E2E8F0;
   }
 
   body {
@@ -50,19 +50,19 @@
   animation: modalPop 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Custom Scrollbar - Natural Tones */
+/* Custom Scrollbar - Navy Tones */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #F9F9F4;
+  background: #0B132B;
 }
 ::-webkit-scrollbar-thumb {
-  background: #A3B18A;
+  background: #1E2F4D;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3A5A40;
+  background: #2563EB;
 }
 
 /* Smooth Navbar Hover Styles */
@@ -75,21 +75,21 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #5A5A40;
+  color: #94A3B8;
   border-radius: 0.5rem;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-link:hover {
-  color: #3A5A40;
-  background-color: rgba(58, 90, 64, 0.08);
+  color: #FFFFFF;
+  background-color: rgba(37, 99, 235, 0.15);
   transform: translateY(-1px);
 }
 
 .nav-link.active-link {
-  color: #3A5A40;
+  color: #38BDF8;
   font-weight: 700;
-  background-color: rgba(58, 90, 64, 0.12);
+  background-color: rgba(37, 99, 235, 0.2);
 }
 
 .nav-link.active-link::after {
@@ -99,7 +99,7 @@
   left: 0.75rem;
   right: 0.75rem;
   height: 2.5px;
-  background-color: #3A5A40;
+  background-color: #38BDF8;
   border-radius: 9999px;
   transition: all 0.3s ease;
 }
@@ -121,71 +121,71 @@
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 
-/* Natural Tones Cards */
-.card-emerald, .card-natural {
-  background: #FFFFFF;
-  border: 1px solid #E0E0D6;
+/* Navy Tones Cards */
+.card-emerald, .card-natural, .card-navy {
+  background: #131F37;
+  border: 1px solid #1E2F4D;
   border-radius: 1.25rem;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 15px -3px rgba(58, 90, 64, 0.05);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
 }
 
-.card-emerald:hover, .card-natural:hover {
-  border-color: #A3B18A;
+.card-emerald:hover, .card-natural:hover, .card-navy:hover {
+  border-color: #2563EB;
   transform: translateY(-5px);
-  box-shadow: 0 16px 32px -6px rgba(58, 90, 64, 0.12);
+  box-shadow: 0 16px 32px -6px rgba(37, 99, 235, 0.25);
 }
 
-/* Natural Tones Buttons */
-.btn-forest, .btn-primary {
-  background: #3A5A40;
+/* Navy Tones Buttons */
+.btn-forest, .btn-primary, .btn-navy {
+  background: #2563EB;
   color: #FFFFFF;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(58, 90, 64, 0.25);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
 }
 
-.btn-forest:hover, .btn-primary:hover {
-  background: #2C4530;
+.btn-forest:hover, .btn-primary:hover, .btn-navy:hover {
+  background: #1D4ED8;
   color: #FFFFFF;
-  box-shadow: 0 6px 20px rgba(58, 90, 64, 0.35);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
   transform: translateY(-2px);
 }
 
 .btn-sage, .btn-secondary {
-  background: #5A5A40;
+  background: #1E2F4D;
   color: #FFFFFF;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(90, 90, 64, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .btn-sage:hover, .btn-secondary:hover {
-  background: #3A5A40;
+  background: #2563EB;
   color: #FFFFFF;
-  box-shadow: 0 6px 20px rgba(58, 90, 64, 0.3);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
   transform: translateY(-2px);
 }
 
-/* Legacy support alias for btn-maroon to point to natural forest green button */
+/* Legacy support alias for btn-maroon to point to navy blue button */
 .btn-maroon {
-  background: #3A5A40;
+  background: #2563EB;
   color: #FFFFFF;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(58, 90, 64, 0.25);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
 }
 
 .btn-maroon:hover {
-  background: #2C4530;
+  background: #1D4ED8;
   color: #FFFFFF;
-  box-shadow: 0 6px 22px rgba(58, 90, 64, 0.35);
+  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.5);
   transform: translateY(-2px);
 }
 
-/* Natural Badge */
-.badge-sage, .badge-maroon {
-  background-color: #3A5A40;
+/* Navy Badge */
+.badge-sage, .badge-maroon, .badge-navy {
+  background-color: #2563EB;
   color: #FFFFFF;
 }
 
@@ -220,5 +220,3 @@
 .faq-item.active .faq-icon {
   transform: rotate(180deg);
 }
-
-

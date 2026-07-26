@@ -1,4 +1,4 @@
-// Shared components & interactions for GemilangKatunOutbond website
+// Shared components & interactions for GemilangKatunOutbond website (Navy Blue Theme)
 
 export function renderNavbar(activePage = 'home') {
   const navContainer = document.getElementById('navbar-mount');
@@ -6,11 +6,11 @@ export function renderNavbar(activePage = 'home') {
 
   const links = [
     { name: 'Beranda', href: '/', key: 'home' },
-    { name: 'Tentang Kami', href: '/about', key: 'about' },
-    { name: 'Paket Outbound', href: '/paket', key: 'paket' },
-    { name: 'Galeri', href: '/gallery', key: 'gallery' },
-    { name: 'Blog', href: '/blog', key: 'blog' },
-    { name: 'Kontak', href: '/contact', key: 'contact' },
+    { name: 'Tentang Kami', href: '/about.html', key: 'about' },
+    { name: 'Paket Outbound', href: '/paket.html', key: 'paket' },
+    { name: 'Galeri', href: '/gallery.html', key: 'gallery' },
+    { name: 'Blog', href: '/blog.html', key: 'blog' },
+    { name: 'Kontak', href: '/contact.html', key: 'contact' },
   ];
 
   const navLinksHtml = links.map(link => {
@@ -23,22 +23,23 @@ export function renderNavbar(activePage = 'home') {
   }).join('');
 
   navContainer.innerHTML = `
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E0E0D6] shadow-sm">
+    <header class="sticky top-0 z-50 bg-[#0B132B]/95 backdrop-blur-md border-b border-[#1E2F4D] shadow-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 sm:h-20">
           
           <!-- Logo with Pine Tree Icon -->
-          <a href="index.html" class="flex items-center space-x-3 group">
-  <img 
-    src="/src/assets/images/logo.webp" 
-    alt="Logo GemilangKatunOutbond" 
-    class="w-10 h-10 object-contain rounded-full group-hover:scale-105 transition-all duration-300" 
-  />
-  <div>
-    <span class="text-lg sm:text-xl font-bold tracking-tight text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
-    <p class="text-[9px] text-[#5A5A40] font-medium tracking-widest uppercase">Provider No.1 Batu & Malang</p>
-  </div>
-</a>
+          <a href="/" class="flex items-center space-x-3 group">
+            <img 
+              src="/assets/images/logo.webp" 
+              alt="Logo GemilangKatunOutbond" 
+              class="w-10 h-10 object-contain rounded-full border border-[#1E2F4D] shadow-sm group-hover:scale-105 transition-all duration-300" 
+              onerror="this.onerror=null; this.src='/src/assets/images/logo.webp';"
+            />
+            <div>
+              <span class="text-lg sm:text-xl font-bold tracking-tight text-[#38BDF8]">GemilangKatun<span class="text-white">Outbond</span></span>
+              <p class="text-[9px] text-[#94A3B8] font-medium tracking-widest uppercase">Provider No.1 Batu & Malang</p>
+            </div>
+          </a>
 
           <!-- Desktop Navigation -->
           <nav class="hidden md:flex items-center space-x-2 lg:space-x-4">
@@ -47,7 +48,7 @@ export function renderNavbar(activePage = 'home') {
 
           <!-- Right Action CTA -->
           <div class="hidden lg:flex items-center space-x-4">
-            <a href="https://wa.me/6283115542771?text=Halo%20Tim%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket%20outbound" target="_blank" class="px-5 py-2.5 bg-[#3A5A40] hover:bg-[#2C4530] text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 hover:-translate-y-0.5">
+            <a href="https://wa.me/6283115542771?text=Halo%20Tim%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket%20outbound" target="_blank" class="px-5 py-2.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 hover:-translate-y-0.5">
               <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
               </svg>
@@ -57,7 +58,7 @@ export function renderNavbar(activePage = 'home') {
 
           <!-- Mobile Hamburger Toggle -->
           <div class="md:hidden flex items-center">
-            <button id="mobile-menu-btn" aria-label="Menu Switcher" class="p-2 rounded-lg text-[#5A5A40] hover:text-[#3A5A40] hover:bg-[#F5F5F0] transition-colors focus:outline-none">
+            <button id="mobile-menu-btn" aria-label="Menu Switcher" class="p-2 rounded-lg text-[#94A3B8] hover:text-white hover:bg-[#131F37] transition-colors focus:outline-none">
               <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
@@ -67,14 +68,14 @@ export function renderNavbar(activePage = 'home') {
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden md:hidden pb-6 pt-2 border-t border-[#E0E0D6] space-y-2">
+        <div id="mobile-menu" class="hidden md:hidden pb-6 pt-2 border-t border-[#1E2F4D] space-y-2">
           ${links.map(link => `
-            <a href="${link.href}" class="block px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${activePage === link.key ? 'bg-[#3A5A40]/10 text-[#3A5A40] font-bold' : 'text-[#5A5A40] hover:bg-[#F5F5F0] hover:text-[#3A5A40]'}">
+            <a href="${link.href}" class="block px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${activePage === link.key ? 'bg-[#2563EB]/20 text-[#38BDF8] font-bold' : 'text-[#94A3B8] hover:bg-[#131F37] hover:text-white'}">
               ${link.name}
             </a>
           `).join('')}
           <div class="pt-2 px-4">
-            <a href="https://wa.me/6283115542771?text=Halo%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket" target="_blank" class="w-full py-3 rounded-full bg-[#3A5A40] text-white text-center block text-xs font-bold uppercase tracking-wider shadow-md">
+            <a href="https://wa.me/6283115542771?text=Halo%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket" target="_blank" class="w-full py-3 rounded-full bg-[#2563EB] text-white text-center block text-xs font-bold uppercase tracking-wider shadow-md">
               Chat Admin via WhatsApp
             </a>
           </div>
@@ -99,7 +100,7 @@ export function renderFooter() {
   if (!footerContainer) return;
 
   footerContainer.innerHTML = `
-    <footer class="bg-white border-t border-[#E0E0D6] pt-12 sm:pt-16 pb-10 text-[#5A5A40]">
+    <footer class="bg-[#0A1128] border-t border-[#1E2F4D] pt-12 sm:pt-16 pb-10 text-[#94A3B8]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Main Footer 4 Columns Grid -->
@@ -111,38 +112,38 @@ export function renderFooter() {
               <img 
                 src="/assets/images/logo.webp" 
                 alt="Logo GemilangKatunOutbond" 
-                class="w-10 h-10 object-contain rounded-full border border-[#E0E0D6] shadow-sm group-hover:scale-105 transition-all duration-300" 
+                class="w-10 h-10 object-contain rounded-full border border-[#1E2F4D] shadow-sm group-hover:scale-105 transition-all duration-300" 
                 onerror="this.onerror=null; this.src='/src/assets/images/logo.webp';"
               />
               <div>
-                <span class="text-lg font-bold tracking-tight text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
-                <p class="text-[9px] text-[#5A5A40] font-semibold tracking-widest uppercase">Provider No.1 Batu & Malang</p>
+                <span class="text-lg font-bold tracking-tight text-[#38BDF8]">GemilangKatun<span class="text-white">Outbond</span></span>
+                <p class="text-[9px] text-[#94A3B8] font-semibold tracking-widest uppercase">Provider No.1 Batu & Malang</p>
               </div>
             </a>
 
-            <p class="text-xs text-[#5A5A40] leading-relaxed font-light">
+            <p class="text-xs text-[#94A3B8] leading-relaxed font-light">
               Penyedia layanan paket outbound Malang, Batu, team building perusahaan, rafting, paintball, & family gathering sekolah terpercaya dengan pengalaman lebih dari 10 tahun di Jawa Timur.
             </p>
 
             <div class="pt-2">
-              <span class="text-[11px] uppercase font-bold tracking-wider text-[#3A5A40] block mb-2">Ikuti Media Sosial Kami</span>
+              <span class="text-[11px] uppercase font-bold tracking-wider text-[#38BDF8] block mb-2">Ikuti Media Sosial Kami</span>
               <div class="flex items-center space-x-2.5">
                 <!-- Instagram -->
-                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#131F37] border border-[#1E2F4D] text-[#38BDF8] hover:bg-[#2563EB] hover:text-white hover:border-[#2563EB] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
 
                 <!-- YouTube -->
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#131F37] border border-[#1E2F4D] text-[#38BDF8] hover:bg-[#2563EB] hover:text-white hover:border-[#2563EB] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
                 </a>
 
                 <!-- TikTok -->
-                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
+                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#131F37] border border-[#1E2F4D] text-[#38BDF8] hover:bg-[#2563EB] hover:text-white hover:border-[#2563EB] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.52-1.35 2.51-.05 1.2.53 2.39 1.52 3.01.92.58 2.11.62 3.08.18.89-.39 1.53-1.22 1.73-2.17.08-.47.09-.95.08-1.43-.02-3.88-.01-7.77-.01-11.66z"/>
                   </svg>
@@ -153,67 +154,67 @@ export function renderFooter() {
 
           <!-- Col 2: Navigasi Utama (Span 2) -->
           <div class="lg:col-span-2 space-y-3">
-            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+            <h4 class="text-xs font-bold text-[#38BDF8] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
               <span>Navigasi</span>
             </h4>
             <ul class="space-y-2.5 text-xs font-medium">
-              <li><a href="/" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Beranda</a></li>
-              <li><a href="/about.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Tentang Kami</a></li>
-              <li><a href="/paket.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Daftar Paket</a></li>
-              <li><a href="/gallery.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Galeri Foto</a></li>
-              <li><a href="/blog.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Blog Artikel</a></li>
-              <li><a href="/contact.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Hubungi Kami</a></li>
+              <li><a href="/" class="hover:text-white hover:translate-x-1 transition-all inline-block">Beranda</a></li>
+              <li><a href="/about.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Tentang Kami</a></li>
+              <li><a href="/paket.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Daftar Paket</a></li>
+              <li><a href="/gallery.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Galeri Foto</a></li>
+              <li><a href="/blog.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Blog Artikel</a></li>
+              <li><a href="/contact.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Hubungi Kami</a></li>
             </ul>
           </div>
 
           <!-- Col 3: Paket Terpopuler (Span 3) -->
           <div class="lg:col-span-3 space-y-3">
-            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+            <h4 class="text-xs font-bold text-[#38BDF8] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
               <span>Paket Populer</span>
             </h4>
             <ul class="space-y-2.5 text-xs font-medium">
-              <li><a href="/paket/paket-outbound-perusahaan-malang.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Perusahaan Malang</a></li>
-              <li><a href="/paket/paket-outbound-rafting-batu.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound + Rafting Batu</a></li>
-              <li><a href="/paket/paket-outbound-sekolah-edukasi.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Edukasi Sekolah</a></li>
-              <li><a href="/paket/paket-outbound-keluarga-gathering.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Family Gathering Batu Malang</a></li>
-              <li><a href="/paket/paket-outbound-paintball-batu.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Paket Paintball War Games</a></li>
-              <li><a href="/paket/paket-outbound-kampus-organisasi.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Kampus & LDKS</a></li>
+              <li><a href="/paket/paket-outbound-perusahaan-malang.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Outbound Perusahaan Malang</a></li>
+              <li><a href="/paket/paket-outbound-rafting-batu.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Outbound + Rafting Batu</a></li>
+              <li><a href="/paket/paket-outbound-sekolah-edukasi.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Outbound Edukasi Sekolah</a></li>
+              <li><a href="/paket/paket-outbound-keluarga-gathering.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Family Gathering Batu Malang</a></li>
+              <li><a href="/paket/paket-outbound-paintball-batu.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Paket Paintball War Games</a></li>
+              <li><a href="/paket/paket-outbound-kampus-organisasi.html" class="hover:text-white hover:translate-x-1 transition-all inline-block">Outbound Kampus & LDKS</a></li>
             </ul>
           </div>
 
           <!-- Col 4: Basecamp & Kontak (Span 3) -->
           <div class="lg:col-span-3 space-y-3">
-            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+            <h4 class="text-xs font-bold text-[#38BDF8] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#38BDF8]"></span>
               <span>Kontak Basecamp</span>
             </h4>
             <ul class="space-y-3 text-xs">
               <li class="flex items-start space-x-2.5">
-                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0 mt-0.5">
+                <div class="w-6 h-6 rounded-md bg-[#2563EB]/20 text-[#38BDF8] flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <span class="text-[#5A5A40] leading-relaxed">Jl. Raya Coban Rondo No. 88, Pandesari, Kec. Pujon, Kab. Malang, Jawa Timur 65391</span>
+                <span class="text-[#94A3B8] leading-relaxed">Jl. Raya Coban Rondo No. 88, Pandesari, Kec. Pujon, Kab. Malang, Jawa Timur 65391</span>
               </li>
               <li class="flex items-center space-x-2.5">
-                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0">
+                <div class="w-6 h-6 rounded-md bg-[#2563EB]/20 text-[#38BDF8] flex items-center justify-center shrink-0">
                   <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <a href="mailto:admin@gemilangkatunoutbond.co.id" class="text-[#5A5A40] hover:text-[#3A5A40] transition-colors truncate">admin@gemilangkatunoutbond.co.id</a>
+                <a href="mailto:admin@gemilangkatunoutbond.co.id" class="text-[#94A3B8] hover:text-[#38BDF8] transition-colors truncate">admin@gemilangkatunoutbond.co.id</a>
               </li>
               <li class="flex items-center space-x-2.5">
-                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0">
+                <div class="w-6 h-6 rounded-md bg-[#2563EB]/20 text-[#38BDF8] flex items-center justify-center shrink-0">
                   <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <a href="https://wa.me/6283115542771" target="_blank" class="text-[#3A5A40] font-bold hover:underline">+62 831-1554-2771 (WA)</a>
+                <a href="https://wa.me/6283115542771" target="_blank" class="text-[#38BDF8] font-bold hover:underline">+62 831-1554-2771 (WA)</a>
               </li>
             </ul>
           </div>
@@ -221,11 +222,11 @@ export function renderFooter() {
         </div>
 
         <!-- Copyright & Bottom Bar -->
-        <div class="border-t border-[#E0E0D6] pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#5A5A40] space-y-3 md:space-y-0">
+        <div class="border-t border-[#1E2F4D] pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#94A3B8] space-y-3 md:space-y-0">
           <p>© 2026 GemilangKatunOutbond Professional. Hak Cipta Dilindungi Undang-Undang.</p>
           <div class="flex items-center space-x-6 text-[11px]">
             <span>Provider Outbound Resmi Malang & Batu</span>
-            <a href="/contact.html" class="hover:text-[#3A5A40] hover:underline">Lokasi Google Maps</a>
+            <a href="/contact.html" class="hover:text-[#38BDF8] hover:underline">Lokasi Google Maps</a>
           </div>
         </div>
 
@@ -244,10 +245,10 @@ export function renderFloatingWA() {
     waElement.className = 'group cursor-pointer';
     waElement.innerHTML = `
       <!-- Tooltip label -->
-      <div class="hidden sm:flex items-center space-x-2 bg-white text-[#333333] text-xs px-3.5 py-2 rounded-full border border-[#E0E0D6] shadow-2xl font-bold tracking-wide transition-all group-hover:scale-105 mr-3">
+      <div class="hidden sm:flex items-center space-x-2 bg-[#131F37] text-white text-xs px-3.5 py-2 rounded-full border border-[#1E2F4D] shadow-2xl font-bold tracking-wide transition-all group-hover:scale-105 mr-3">
         <span class="w-2.5 h-2.5 rounded-full bg-[#25D366] animate-ping"></span>
         <span>Chat Admin WA</span>
-        <span class="text-[#3A5A40] font-bold text-[10px] bg-[#3A5A40]/10 px-2 py-0.5 rounded-full">24/7</span>
+        <span class="text-[#38BDF8] font-bold text-[10px] bg-[#2563EB]/20 px-2 py-0.5 rounded-full">24/7</span>
       </div>
 
       <!-- Official Floating WhatsApp Button -->
@@ -271,7 +272,7 @@ export function renderFloatingWA() {
     bttElement.id = 'back-to-top-btn';
     bttElement.setAttribute('aria-label', 'Kembali ke Atas');
     bttElement.style.cssText = 'position: fixed; bottom: 92px; right: 28px; z-index: 9999; pointer-events: auto;';
-    bttElement.className = 'w-11 h-11 bg-[#3A5A40] hover:bg-[#2C4530] text-white rounded-full flex items-center justify-center shadow-xl transition-all duration-300 border border-white/30 transform hover:scale-110 active:scale-95 group';
+    bttElement.className = 'w-11 h-11 bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full flex items-center justify-center shadow-xl transition-all duration-300 border border-white/20 transform hover:scale-110 active:scale-95 group';
     bttElement.innerHTML = `
       <svg class="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
@@ -290,60 +291,60 @@ export function openBookingModal(packageData = {}) {
   if (!modal) {
     modal = document.createElement('div');
     modal.id = 'booking-modal';
-    modal.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 hidden';
+    modal.className = 'fixed inset-0 z-50 flex items-center justify-center bg-black/75 backdrop-blur-md p-4 hidden';
     modal.innerHTML = `
-      <div class="bg-white border border-[#E0E0D6] rounded-3xl max-w-lg w-full p-6 sm:p-8 text-[#333333] relative shadow-2xl">
-        <button id="close-modal-btn" class="absolute top-5 right-5 text-[#5A5A40] hover:text-[#3A5A40] p-1 transition-colors">
+      <div class="bg-[#131F37] border border-[#1E2F4D] rounded-3xl max-w-lg w-full p-6 sm:p-8 text-white relative shadow-2xl">
+        <button id="close-modal-btn" class="absolute top-5 right-5 text-[#94A3B8] hover:text-white p-1 transition-colors">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
 
         <div class="flex items-center space-x-3 mb-6">
-          <div class="p-2.5 bg-[#3A5A40]/10 text-[#3A5A40] rounded-xl">
+          <div class="p-2.5 bg-[#2563EB]/20 text-[#38BDF8] rounded-xl border border-[#1E2F4D]">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
           </div>
           <div>
-            <h3 class="text-xl font-bold text-[#3A5A40]">Formulir Reservasi Paket</h3>
-            <p class="text-xs text-[#5A5A40]">Pesan langsung & dapatkan harga promo rombongan!</p>
+            <h3 class="text-xl font-bold text-white">Formulir Reservasi Paket</h3>
+            <p class="text-xs text-[#94A3B8]">Pesan langsung & dapatkan harga promo rombongan!</p>
           </div>
         </div>
 
         <form id="booking-modal-form" class="space-y-4">
           <input type="hidden" id="modal-package-id" value="">
           <div>
-            <label class="block text-xs font-semibold text-[#5A5A40] mb-1">Paket Yang Dipilih</label>
-            <input type="text" id="modal-package-name" readonly class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#3A5A40] font-bold focus:outline-none">
+            <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Paket Yang Dipilih</label>
+            <input type="text" id="modal-package-name" readonly class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-[#38BDF8] font-bold focus:outline-none">
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label class="block text-xs font-semibold text-[#5A5A40] mb-1">Nama Pemesan / Instansi</label>
-              <input type="text" id="modal-user-name" required placeholder="Contoh: Budi (PT Sentosa)" class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#333] focus:border-[#3A5A40] focus:outline-none">
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Nama Pemesan / Instansi</label>
+              <input type="text" id="modal-user-name" required placeholder="Contoh: Budi (PT Sentosa)" class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-[#64748B] focus:border-[#2563EB] focus:outline-none">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-[#5A5A40] mb-1">No. WhatsApp</label>
-              <input type="tel" id="modal-user-phone" required placeholder="083115542771" class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#333] focus:border-[#3A5A40] focus:outline-none">
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">No. WhatsApp</label>
+              <input type="tel" id="modal-user-phone" required placeholder="083115542771" class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-[#64748B] focus:border-[#2563EB] focus:outline-none">
             </div>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label class="block text-xs font-semibold text-[#5A5A40] mb-1">Estimasi Peserta</label>
-              <input type="number" id="modal-participants" min="10" value="30" class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#333] focus:border-[#3A5A40] focus:outline-none">
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Estimasi Peserta</label>
+              <input type="number" id="modal-participants" min="10" value="30" class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-white focus:border-[#2563EB] focus:outline-none">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-[#5A5A40] mb-1">Rencana Tanggal Acara</label>
-              <input type="date" id="modal-event-date" class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#333] focus:border-[#3A5A40] focus:outline-none">
+              <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Rencana Tanggal Acara</label>
+              <input type="date" id="modal-event-date" class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-white focus:border-[#2563EB] focus:outline-none">
             </div>
           </div>
 
           <div>
-            <label class="block text-xs font-semibold text-[#5A5A40] mb-1">Catatan Khusus / Permintaan Tambahan</label>
-            <textarea id="modal-notes" rows="2" placeholder="Contoh: Perlu opsi catering vegetarian, spanduk custom, dll." class="w-full bg-[#F9F9F4] border border-[#E0E0D6] rounded-xl px-3.5 py-2.5 text-sm text-[#333] focus:border-[#3A5A40] focus:outline-none"></textarea>
+            <label class="block text-xs font-semibold text-[#94A3B8] mb-1">Catatan Khusus / Permintaan Tambahan</label>
+            <textarea id="modal-notes" rows="2" placeholder="Contoh: Perlu opsi catering vegetarian, spanduk custom, dll." class="w-full bg-[#0B132B] border border-[#1E2F4D] rounded-xl px-3.5 py-2.5 text-sm text-white placeholder-[#64748B] focus:border-[#2563EB] focus:outline-none"></textarea>
           </div>
 
-          <div id="booking-modal-alert" class="hidden text-xs p-3 rounded-xl bg-[#3A5A40]/10 text-[#3A5A40] border border-[#3A5A40]/20"></div>
+          <div id="booking-modal-alert" class="hidden text-xs p-3 rounded-xl bg-[#2563EB]/20 text-[#38BDF8] border border-[#2563EB]/30"></div>
 
-          <button type="submit" class="w-full py-3.5 rounded-full bg-[#3A5A40] hover:bg-[#2C4530] text-white font-bold uppercase tracking-wider text-xs flex items-center justify-center space-x-2 transition-all shadow-md">
+          <button type="submit" class="w-full py-3.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold uppercase tracking-wider text-xs flex items-center justify-center space-x-2 transition-all shadow-lg">
             <span>Kirim via WhatsApp Admin</span>
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </button>
@@ -389,27 +390,27 @@ export function setupLightboxGallery(itemsArray = []) {
   if (!modal) {
     modal = document.createElement('div');
     modal.id = 'lightbox-modal';
-    modal.className = 'fixed inset-0 z-[99999] bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 sm:p-5 select-none overflow-hidden';
+    modal.className = 'fixed inset-0 z-[99999] bg-black/90 backdrop-blur-md hidden items-center justify-center p-3 sm:p-5 select-none overflow-hidden';
     modal.innerHTML = `
       <!-- Card Container Centered in Viewport -->
-      <div id="lightbox-card-wrapper" class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden max-w-4xl w-full border border-[#E0E0D6] flex flex-col md:flex-row m-auto max-h-[90vh] sm:max-h-[85vh] transition-all animate-modal-pop">
+      <div id="lightbox-card-wrapper" class="relative bg-[#131F37] rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden max-w-4xl w-full border border-[#1E2F4D] flex flex-col md:flex-row m-auto max-h-[90vh] sm:max-h-[85vh] transition-all animate-modal-pop">
         
         <!-- X Close Button (Prominent & Always Visible) -->
-        <button id="close-lightbox-btn" aria-label="Tutup Galeri" class="absolute top-3 right-3 z-30 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-[#3A5A40] text-white flex items-center justify-center shadow-xl transition-all transform hover:scale-110 focus:outline-none">
+        <button id="close-lightbox-btn" aria-label="Tutup Galeri" class="absolute top-3 right-3 z-30 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-black/60 hover:bg-[#2563EB] text-white flex items-center justify-center shadow-xl transition-all transform hover:scale-110 focus:outline-none">
           <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
 
         <!-- Left / Top: Image View area with Prev/Next buttons -->
-        <div class="relative md:w-3/5 bg-black flex items-center justify-center min-h-[220px] md:min-h-[360px] max-h-[48vh] md:max-h-none overflow-hidden group p-2">
+        <div class="relative md:w-3/5 bg-[#0B132B] flex items-center justify-center min-h-[220px] md:min-h-[360px] max-h-[48vh] md:max-h-none overflow-hidden group p-2">
           <img id="lightbox-img" src="" alt="Foto Galeri" class="w-full h-full object-contain max-h-[42vh] md:max-h-[70vh] rounded-lg" />
           
           <!-- Prev button -->
-          <button id="prev-lightbox-btn" aria-label="Foto Sebelumnya" class="absolute left-2 sm:left-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-[#3A5A40] text-white flex items-center justify-center border border-white/20 shadow-xl transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
+          <button id="prev-lightbox-btn" aria-label="Foto Sebelumnya" class="absolute left-2 sm:left-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-[#2563EB] text-white flex items-center justify-center border border-white/20 shadow-xl transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
           </button>
 
           <!-- Next button -->
-          <button id="next-lightbox-btn" aria-label="Foto Selanjutnya" class="absolute right-2 sm:right-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-[#3A5A40] text-white flex items-center justify-center border border-white/20 shadow-xl transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
+          <button id="next-lightbox-btn" aria-label="Foto Selanjutnya" class="absolute right-2 sm:right-3 z-20 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-black/60 hover:bg-[#2563EB] text-white flex items-center justify-center border border-white/20 shadow-xl transition-all transform hover:scale-110 active:scale-95 focus:outline-none">
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
           </button>
 
@@ -420,28 +421,28 @@ export function setupLightboxGallery(itemsArray = []) {
         </div>
 
         <!-- Right / Bottom: Description Card content -->
-        <div class="md:w-2/5 p-4 sm:p-6 flex flex-col justify-between bg-white text-[#333333] space-y-3 overflow-y-auto max-h-[44vh] md:max-h-none">
+        <div class="md:w-2/5 p-4 sm:p-6 flex flex-col justify-between bg-[#131F37] text-white space-y-3 overflow-y-auto max-h-[44vh] md:max-h-none">
           <div class="space-y-2">
-            <span id="lightbox-category" class="inline-block px-3 py-0.5 rounded-full bg-[#3A5A40]/10 text-[#3A5A40] text-[11px] font-bold uppercase tracking-wider">
+            <span id="lightbox-category" class="inline-block px-3 py-0.5 rounded-full bg-[#2563EB]/20 text-[#38BDF8] text-[11px] font-bold uppercase tracking-wider border border-[#2563EB]/30">
               Coban Rondo
             </span>
 
-            <h3 id="lightbox-caption" class="text-base sm:text-xl font-serif font-bold text-[#3A5A40] leading-snug">
+            <h3 id="lightbox-caption" class="text-base sm:text-xl font-bold text-white leading-snug">
               Flying Fox & High Ropes Coban Rondo
             </h3>
 
-            <p id="lightbox-desc" class="text-xs sm:text-sm text-[#5A5A40] leading-relaxed font-light">
+            <p id="lightbox-desc" class="text-xs sm:text-sm text-[#94A3B8] leading-relaxed font-light">
               Dokumentasi kegiatan outbound & tantangan keberanian di kawasan hutan pinus Coban Rondo Batu Malang bersama fasilitator BNSP GemilangKatunOutbond.
             </p>
           </div>
 
-          <div class="pt-3 border-t border-[#E0E0D6] space-y-2">
-            <a id="lightbox-wa-btn" href="https://wa.me/6283115542771" target="_blank" class="w-full py-2.5 rounded-full bg-[#3A5A40] hover:bg-[#2C4530] text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center space-x-2 shadow-md transition-all">
+          <div class="pt-3 border-t border-[#1E2F4D] space-y-2">
+            <a id="lightbox-wa-btn" href="https://wa.me/6283115542771" target="_blank" class="w-full py-2.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center space-x-2 shadow-md transition-all">
               <span>Tanya Paket Ini via WA</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
             
-            <p class="text-[10px] text-[#5A5A40] text-center italic">
+            <p class="text-[10px] text-[#94A3B8] text-center italic">
               Gunakan &lt; &gt; atau Panah Keyboard untuk beralih foto.
             </p>
           </div>
@@ -611,4 +612,3 @@ if (typeof window !== 'undefined') {
     runAuto();
   }
 }
-
