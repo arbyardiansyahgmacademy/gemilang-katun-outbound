@@ -99,47 +99,50 @@ export function renderFooter() {
   if (!footerContainer) return;
 
   footerContainer.innerHTML = `
-    <footer class="bg-white border-t border-[#E0E0D6] pt-16 pb-12 text-[#5A5A40]">
+    <footer class="bg-white border-t border-[#E0E0D6] pt-12 sm:pt-16 pb-10 text-[#5A5A40]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Main Footer 4 Columns Grid -->
+        <div class="pb-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
           
-          <!-- Col 1: About & Logo -->
-          <div class="space-y-4">
-            <div class="flex items-center space-x-3">
-              <div class="w-9 h-9 rounded-full bg-[#3A5A40] text-white flex items-center justify-center">
-                <img 
-                src="/src/assets/images/logo.webp" 
+          <!-- Col 1: Brand Info & Logo (Span 4) -->
+          <div class="lg:col-span-4 space-y-4">
+            <a href="/" class="inline-flex items-center space-x-3 group">
+              <img 
+                src="/assets/images/logo.webp" 
                 alt="Logo GemilangKatunOutbond" 
-                class="w-9 h-9 object-contain" 
-                />
+                class="w-10 h-10 object-contain rounded-full border border-[#E0E0D6] shadow-sm group-hover:scale-105 transition-all duration-300" 
+                onerror="this.onerror=null; this.src='/src/assets/images/logo.webp';"
+              />
+              <div>
+                <span class="text-lg font-bold tracking-tight text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
+                <p class="text-[9px] text-[#5A5A40] font-semibold tracking-widest uppercase">Provider No.1 Batu & Malang</p>
               </div>
-              <span class="text-lg font-bold text-[#3A5A40]">GemilangKatun<span class="text-[#5A5A40]">Outbond</span></span>
-            </div>
-            <p class="text-xs text-[#5A5A40] leading-relaxed">
-              Penyedia layanan paket outbound Malang, Batu, team building perusahaan, rafting, paintball, & gathering sekolah terpercaya No. 1 di Jawa Timur.
+            </a>
+
+            <p class="text-xs text-[#5A5A40] leading-relaxed font-light">
+              Penyedia layanan paket outbound Malang, Batu, team building perusahaan, rafting, paintball, & family gathering sekolah terpercaya dengan pengalaman lebih dari 10 tahun di Jawa Timur.
             </p>
 
             <div class="pt-2">
-              <span class="text-xs uppercase font-bold tracking-wider text-[#3A5A40] block mb-1">Ikuti Media Sosial Kami</span>
-              
-              <!-- Social Media Icons (Instagram, YouTube, TikTok) -->
-              <div class="flex items-center space-x-3 pt-1">
+              <span class="text-[11px] uppercase font-bold tracking-wider text-[#3A5A40] block mb-2">Ikuti Media Sosial Kami</span>
+              <div class="flex items-center space-x-2.5">
                 <!-- Instagram -->
-                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-1">
+                <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                   </svg>
                 </a>
 
                 <!-- YouTube -->
-                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-1">
+                <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                   </svg>
                 </a>
 
                 <!-- TikTok -->
-                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-1">
+                <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok GemilangKatunOutbond" class="w-9 h-9 rounded-full bg-[#F5F5F0] border border-[#E0E0D6] text-[#3A5A40] hover:bg-[#3A5A40] hover:text-white hover:border-[#3A5A40] flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-0.5">
                   <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.31 1.52-1.35 2.51-.05 1.2.53 2.39 1.52 3.01.92.58 2.11.62 3.08.18.89-.39 1.53-1.22 1.73-2.17.08-.47.09-.95.08-1.43-.02-3.88-.01-7.77-.01-11.66z"/>
                   </svg>
@@ -148,64 +151,81 @@ export function renderFooter() {
             </div>
           </div>
 
-          <!-- Col 2: Quick Links -->
-          <div>
-            <h4 class="text-[#3A5A40] font-bold mb-4 text-sm tracking-wider uppercase border-b border-[#E0E0D6] pb-2 inline-block">Link Cepat</h4>
+          <!-- Col 2: Navigasi Utama (Span 2) -->
+          <div class="lg:col-span-2 space-y-3">
+            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+              <span>Navigasi</span>
+            </h4>
             <ul class="space-y-2.5 text-xs font-medium">
-              <li><a href="index.html" class="hover:text-[#3A5A40] transition-colors">Beranda</a></li>
-              <li><a href="about.html" class="hover:text-[#3A5A40] transition-colors">Tentang Kami</a></li>
-              <li><a href="paket.html" class="hover:text-[#3A5A40] transition-colors">Daftar Paket</a></li>
-              <li><a href="gallery.html" class="hover:text-[#3A5A40] transition-colors">Galeri</a></li>
-              <li><a href="blog.html" class="hover:text-[#3A5A40] transition-colors">Blog</a></li>
+              <li><a href="/" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Beranda</a></li>
+              <li><a href="/about.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Tentang Kami</a></li>
+              <li><a href="/paket.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Daftar Paket</a></li>
+              <li><a href="/gallery.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Galeri Foto</a></li>
+              <li><a href="/blog.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Blog Artikel</a></li>
+              <li><a href="/contact.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Hubungi Kami</a></li>
             </ul>
           </div>
 
-          <!-- Col 3: Paket Favorit SEO -->
-          <div>
-            <h4 class="text-[#3A5A40] font-bold mb-4 text-sm tracking-wider uppercase border-b border-[#E0E0D6] pb-2 inline-block">Paket Terpopuler</h4>
+          <!-- Col 3: Paket Terpopuler (Span 3) -->
+          <div class="lg:col-span-3 space-y-3">
+            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+              <span>Paket Populer</span>
+            </h4>
             <ul class="space-y-2.5 text-xs font-medium">
-              <li><a href="paket-detail.html?id=paket-outbound-perusahaan-malang" class="hover:text-[#3A5A40] transition-colors">Paket Outbound Perusahaan Malang</a></li>
-              <li><a href="paket-detail.html?id=paket-outbound-rafting-batu" class="hover:text-[#3A5A40] transition-colors">Paket Outbound + Rafting Batu</a></li>
-              <li><a href="paket-detail.html?id=paket-outbound-sekolah-edukasi" class="hover:text-[#3A5A40] transition-colors">Outbound Edukasi Sekolah</a></li>
-              <li><a href="paket-detail.html?id=paket-outbound-keluarga-gathering" class="hover:text-[#3A5A40] transition-colors">Family Gathering Batu Malang</a></li>
-              <li><a href="paket-detail.html?id=paket-outbound-paintball-batu" class="hover:text-[#3A5A40] transition-colors">Paket Outbound Paintball War</a></li>
+              <li><a href="/paket/paket-outbound-perusahaan-malang.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Perusahaan Malang</a></li>
+              <li><a href="/paket/paket-outbound-rafting-batu.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound + Rafting Batu</a></li>
+              <li><a href="/paket/paket-outbound-sekolah-edukasi.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Edukasi Sekolah</a></li>
+              <li><a href="/paket/paket-outbound-keluarga-gathering.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Family Gathering Batu Malang</a></li>
+              <li><a href="/paket/paket-outbound-paintball-batu.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Paket Paintball War Games</a></li>
+              <li><a href="/paket/paket-outbound-kampus-organisasi.html" class="hover:text-[#3A5A40] hover:translate-x-1 transition-all inline-block">Outbound Kampus & LDKS</a></li>
             </ul>
           </div>
 
-          <!-- Col 4: Contact & GEO Info -->
-          <div>
-            <h4 class="text-[#3A5A40] font-bold mb-4 text-sm tracking-wider uppercase border-b border-[#E0E0D6] pb-2 inline-block">Kontak Basecamp</h4>
+          <!-- Col 4: Basecamp & Kontak (Span 3) -->
+          <div class="lg:col-span-3 space-y-3">
+            <h4 class="text-xs font-bold text-[#3A5A40] uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-[#3A5A40]"></span>
+              <span>Kontak Basecamp</span>
+            </h4>
             <ul class="space-y-3 text-xs">
-              <li class="flex items-start space-x-3">
-                <svg class="w-4 h-4 text-[#3A5A40] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <span class="text-[#5A5A40]">Jl. Raya Coban Rondo No. 88, Pandesari, Kec. Pujon, Kabupaten Malang, Jawa Timur 65391</span>
+              <li class="flex items-start space-x-2.5">
+                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0 mt-0.5">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span class="text-[#5A5A40] leading-relaxed">Jl. Raya Coban Rondo No. 88, Pandesari, Kec. Pujon, Kab. Malang, Jawa Timur 65391</span>
               </li>
-              <li class="flex items-center space-x-3">
-                <svg class="w-4 h-4 text-[#3A5A40] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <span class="text-[#5A5A40]">admin@gemilangkatunoutbond.co.id</span>
+              <li class="flex items-center space-x-2.5">
+                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <a href="mailto:admin@gemilangkatunoutbond.co.id" class="text-[#5A5A40] hover:text-[#3A5A40] transition-colors truncate">admin@gemilangkatunoutbond.co.id</a>
               </li>
-              <li class="flex items-center space-x-3">
-                <svg class="w-4 h-4 text-[#3A5A40] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <span class="text-[#3A5A40] font-semibold">+62-83115542771</span>
+              <li class="flex items-center space-x-2.5">
+                <div class="w-6 h-6 rounded-md bg-[#3A5A40]/10 text-[#3A5A40] flex items-center justify-center shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <a href="https://wa.me/6283115542771" target="_blank" class="text-[#3A5A40] font-bold hover:underline">+62 831-1554-2771 (WA)</a>
               </li>
             </ul>
           </div>
 
         </div>
 
-        <!-- Copyright -->
-        <div class="border-t border-[#E0E0D6] pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#5A5A40] space-y-4 md:space-y-0">
+        <!-- Copyright & Bottom Bar -->
+        <div class="border-t border-[#E0E0D6] pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-[#5A5A40] space-y-3 md:space-y-0">
           <p>© 2026 GemilangKatunOutbond Professional. Hak Cipta Dilindungi Undang-Undang.</p>
-          <div class="flex space-x-6">
-            <span>Provider Resmi Outbound Malang & Batu</span>
-            <a href="contact.html" class="hover:text-[#3A5A40]">Peta Lokasi Google Maps</a>
+          <div class="flex items-center space-x-6 text-[11px]">
+            <span>Provider Outbound Resmi Malang & Batu</span>
+            <a href="/contact.html" class="hover:text-[#3A5A40] hover:underline">Lokasi Google Maps</a>
           </div>
         </div>
 
@@ -504,8 +524,19 @@ function updateLightboxDisplay() {
   const waBtn = document.getElementById('lightbox-wa-btn');
 
   if (img) {
-    img.src = currentItem.src;
+    const fixPath = (url) => {
+      if (!url) return '/assets/images/hero_outbound_malang_1784793004431.webp';
+      if (url.startsWith('http://') || url.startsWith('https://')) return url;
+      if (!url.startsWith('/')) return '/' + url;
+      return url;
+    };
+    img.src = fixPath(currentItem.src);
     img.alt = currentItem.title || 'Foto Galeri GemilangKatunOutbond';
+    img.setAttribute('referrerpolicy', 'no-referrer');
+    img.onerror = function() {
+      this.onerror = null;
+      this.src = '/assets/images/hero_outbound_malang_1784793004431.webp';
+    };
   }
   if (cap) cap.textContent = currentItem.title || 'Dokumentasi Outbound Malang Batu';
   if (desc) desc.textContent = currentItem.desc || `Dokumentasi asli kegiatan ${currentItem.title || 'outbound'} di kawasan Malang & Batu bersama provider resmi GemilangKatunOutbond.`;
@@ -580,3 +611,4 @@ if (typeof window !== 'undefined') {
     runAuto();
   }
 }
+
