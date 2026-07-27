@@ -48,7 +48,7 @@ export function renderNavbar(activePage = 'home') {
 
           <!-- Right Action CTA -->
           <div class="hidden lg:flex items-center space-x-4">
-            <a href="https://wa.me/6283115542771?text=Halo%20Tim%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket%20outbound" target="_blank" class="px-5 py-2.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 hover:-translate-y-0.5">
+            <a href="https://wa.me/6282211221909?text=Halo%20Tim%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket%20outbound" target="_blank" class="px-5 py-2.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white rounded-full text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 flex items-center space-x-2 hover:-translate-y-0.5">
               <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
               </svg>
@@ -75,7 +75,7 @@ export function renderNavbar(activePage = 'home') {
             </a>
           `).join('')}
           <div class="pt-2 px-4">
-            <a href="https://wa.me/6283115542771?text=Halo%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket" target="_blank" class="w-full py-3 rounded-full bg-[#2563EB] text-white text-center block text-xs font-bold uppercase tracking-wider shadow-md">
+            <a href="https://wa.me/6282211221909?text=Halo%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20paket" target="_blank" class="w-full py-3 rounded-full bg-[#2563EB] text-white text-center block text-xs font-bold uppercase tracking-wider shadow-md">
               Chat Admin via WhatsApp
             </a>
           </div>
@@ -214,7 +214,7 @@ export function renderFooter() {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <a href="https://wa.me/6283115542771" target="_blank" class="text-[#38BDF8] font-bold hover:underline">+62 831-1554-2771 (WA)</a>
+                <a href="https://wa.me/6282211221909" target="_blank" class="text-[#38BDF8] font-bold hover:underline">+62 831-1554-2771 (WA)</a>
               </li>
             </ul>
           </div>
@@ -252,7 +252,7 @@ export function renderFloatingWA() {
       </div>
 
       <!-- Official Floating WhatsApp Button -->
-      <a href="https://wa.me/6283115542771?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20informasi%20dan%20penawaran%20paket%20outbound" 
+      <a href="https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20tanya%20informasi%20dan%20penawaran%20paket%20outbound" 
          target="_blank" 
          rel="noopener"
          aria-label="Chat Official WhatsApp Admin GemilangKatunOutbond"
@@ -369,7 +369,7 @@ export function openBookingModal(packageData = {}) {
 
       const waMsg = `Halo Admin GemilangKatunOutbond, saya ingin reservasi/tanya penawaran paket:%0A%0A*Nama/Instansi:* ${userName}%0A*No WA:* ${userPhone}%0A*Paket:* ${pkgName}%0A*Jumlah Peserta:* ${participants} Orang%0A*Tanggal Acara:* ${dateVal || 'Belum pasti'}%0A*Catatan:* ${notesVal || '-'}`;
 
-      window.open(`https://wa.me/6283115542771?text=${waMsg}`, '_blank');
+      window.open(`https://wa.me/6282211221909?text=${waMsg}`, '_blank');
       modal.classList.add('hidden');
     });
   }
@@ -437,7 +437,7 @@ export function setupLightboxGallery(itemsArray = []) {
           </div>
 
           <div class="pt-3 border-t border-[#1E2F4D] space-y-2">
-            <a id="lightbox-wa-btn" href="https://wa.me/6283115542771" target="_blank" class="w-full py-2.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center space-x-2 shadow-md transition-all">
+            <a id="lightbox-wa-btn" href="https://wa.me/6282211221909" target="_blank" class="w-full py-2.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-xs font-bold uppercase tracking-wider text-center flex items-center justify-center space-x-2 shadow-md transition-all">
               <span>Tanya Paket Ini via WA</span>
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
@@ -544,7 +544,7 @@ function updateLightboxDisplay() {
   if (counter) counter.textContent = `Foto ${currentGalleryIndex + 1} dari ${galleryItemsState.length}`;
   if (cat) cat.textContent = currentItem.cat || currentItem.category || 'Galeri Outbound';
   if (waBtn) {
-    waBtn.href = `https://wa.me/6283115542771?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20tertarik%20dengan%20kegiatan%20galeri:%20${encodeURIComponent(currentItem.title || '')}`;
+    waBtn.href = `https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20tertarik%20dengan%20kegiatan%20galeri:%20${encodeURIComponent(currentItem.title || '')}`;
   }
 }
 

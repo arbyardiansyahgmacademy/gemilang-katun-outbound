@@ -111,7 +111,7 @@ packagesData.forEach((pkg) => {
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
           </button>
 
-          <a href="https://wa.me/6283115542771?text=Halo%20Admin%20GemilangKatunOutbond,%20mohon%20kirimkan%20PDF%20Proposal%20untuk%20${encodeURIComponent(pkg.title)}" target="_blank" class="w-full py-3 rounded-full bg-[#0B132B] hover:bg-[#1E2F4D] text-[#38BDF8] border border-[#1E2F4D] text-center font-bold text-xs flex items-center justify-center space-x-2 transition-colors">
+          <a href="https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20mohon%20kirimkan%20PDF%20Proposal%20untuk%20${encodeURIComponent(pkg.title)}" target="_blank" class="w-full py-3 rounded-full bg-[#0B132B] hover:bg-[#1E2F4D] text-[#38BDF8] border border-[#1E2F4D] text-center font-bold text-xs flex items-center justify-center space-x-2 transition-colors">
             <svg class="w-4 h-4 text-[#38BDF8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             <span>Minta Proposal PDF Resmi</span>
           </a>
