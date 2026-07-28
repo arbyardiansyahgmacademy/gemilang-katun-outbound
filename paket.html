@@ -1,185 +1,273 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paket Outbound Malang Batu | GemilangKatunOutbond</title>
-  <link rel="icon" type="image/png" href="/assets/images/logoo.webp" />
-  
-  <meta name="description" content="Daftar harga paket outbound GemilangKatunOutbond Malang & Batu: Sekolah, Perusahaan, Keluarga, Kampus, Rafting & Paintball. Hubungi +62-82211221909." />
-  <meta name="keywords" content="gemilangkatunoutbond, paket outbound malang, harga outbound batu, paket team building malang, paket outbound sekolah" />
-  <link rel="canonical" href="https://gemilangkatunoutbond.co.id/paket.html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paket Outbound Malang Batu | GemilangKatunOutbond</title>
+    <link rel="icon" type="image/png" href="/assets/images/logoo.webp" />
 
-  <link rel="stylesheet" href="/src/index.css" />
+    <meta name="description" content="Daftar harga paket outbound GemilangKatunOutbond Malang & Batu: Sekolah, Perusahaan, Keluarga, Kampus, Rafting & Paintball. Hubungi +62-83115542771." />
+    <meta name="keywords" content="gemilangkatunoutbond, paket outbound malang, harga outbound batu, paket team building malang, paket outbound sekolah" />
+    <link rel="canonical" href="https://gemilangkatunoutbond.co.id/paket.html" />
+
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Custom Elegant Styles (hanya untuk hero & CTA) -->
+    <style>
+        :root {
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeUpIn {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        @keyframes pulseSoft {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(140, 35, 51, 0.4); }
+            50% { box-shadow: 0 0 0 16px rgba(140, 35, 51, 0); }
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Reveal untuk hero & CTA */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+            will-change: opacity, transform;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Decorative line */
+        .decorative-line {
+            height: 2px;
+            background: linear-gradient(90deg, #E6C280, #8C2333, #E6C280);
+            background-size: 200% 100%;
+            animation: gradientShift 4s ease infinite;
+            border-radius: 2px;
+        }
+
+        /* Tombol CTA */
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), rgba(255,255,255,0.06), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+    </style>
 </head>
-<body class="bg-[#0B132B] text-[#E2E8F0] antialiased selection:bg-[#2563EB] selection:text-white font-sans">
+<body class="bg-[#FAF8F5] text-[#2D151B] antialiased selection:bg-[#8C2333] selection:text-[#FCE8EB] font-sans">
 
-  <!-- Mount Navbar -->
-  <div id="navbar-mount"></div>
+    <!-- Mount Navbar -->
+    <div id="navbar-mount"></div>
 
-  <!-- HEADER BANNER -->
-  <section class="py-16 bg-[#0B132B] border-b border-[#1E2F4D] text-white text-center relative reveal">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-      <span class="inline-block px-3.5 py-1 rounded-full bg-[#2563EB]/20 border border-[#2563EB]/40 text-[#38BDF8] text-xs font-bold uppercase tracking-widest">
-        Katalog GemilangKatunOutbond 2026
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-white italic">Daftar Paket Outbound Malang Batu</h1>
-      <p class="text-xs sm:text-sm text-[#94A3B8] max-w-2xl mx-auto font-light leading-relaxed">
-        Temukan paket outbound dan team building yang sesuai dengan kategori kelompok, tujuan acara, dan anggaran Anda.
-      </p>
+    <!-- ==================== HERO BANNER (ELEGAN) ==================== -->
+    <section class="relative py-20 sm:py-24 bg-[#1A080C] border-b border-[#451823] text-white text-center overflow-hidden">
+        <!-- Background pattern & orbs -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #E6C280 1px, transparent 1px); background-size: 24px 24px;"></div>
+        <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#8C2333]/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-[#E6C280]/5 blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 reveal">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-[#8C2333]/30 border border-[#E6C280]/40 text-[#E6C280] text-xs font-bold uppercase tracking-[0.2em] opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.1s_forwards]">
+                Katalog GemilangKatunOutbond 2026
+            </span>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white italic tracking-tight opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.25s_forwards]">
+                Daftar Paket Outbound Malang Batu
+            </h1>
+            <div class="decorative-line w-24 mx-auto opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.35s_forwards]" style="animation-fill-mode: forwards;"></div>
+            <p class="text-xs sm:text-sm text-[#C0A8AE] max-w-2xl mx-auto font-light leading-relaxed opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.45s_forwards]">
+                Temukan paket outbound dan team building yang sesuai dengan kategori kelompok, tujuan acara, dan anggaran Anda.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== FILTER & GRID PAKET (ASLI) ==================== -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <!-- Filter Buttons (tampilan asli) -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="filter-buttons">
+            <button data-cat="all" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#8C2333] text-[#FCE8EB] border border-[#E6C280]/30 shadow-sm">
+                Semua Paket
+            </button>
+            <button data-cat="Perusahaan" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#280E15] text-[#C0A8AE] hover:bg-[#3D1420] hover:text-[#E6C280] border border-[#451823]">
+                Perusahaan
+            </button>
+            <button data-cat="Sekolah" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#280E15] text-[#C0A8AE] hover:bg-[#3D1420] hover:text-[#E6C280] border border-[#451823]">
+                Sekolah
+            </button>
+            <button data-cat="Keluarga" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#280E15] text-[#C0A8AE] hover:bg-[#3D1420] hover:text-[#E6C280] border border-[#451823]">
+                Keluarga
+            </button>
+            <button data-cat="Kampus/Organisasi" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#280E15] text-[#C0A8AE] hover:bg-[#3D1420] hover:text-[#E6C280] border border-[#451823]">
+                Kampus / Organisasi
+            </button>
+        </div>
+
+        <!-- Grid Container (kartu asli) -->
+        <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Injected via JS -->
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER (ELEGAN) ==================== -->
+    <section class="relative py-16 sm:py-20 bg-[#200A0F] border-t border-[#451823] text-white text-center overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#8C2333]/8 blur-4xl pointer-events-none"></div>
+        <div class="relative max-w-4xl mx-auto px-4 space-y-6 reveal">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif italic text-white leading-snug">
+                Konsultasikan Kebutuhan<br class="sm:hidden"> Outbound Anda Sekarang!
+            </h2>
+            <div class="decorative-line w-16 mx-auto"></div>
+            <p class="text-xs sm:text-sm text-[#C0A8AE] max-w-xl mx-auto font-light leading-relaxed">
+                Tim CS kami siap membantu merancang susunan acara (rundown) dan estimasi anggaran sesuai budget Anda.
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20konsultasi%20paket%20outbound"
+                target="_blank"
+                class="btn-shimmer inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#8C2333] hover:bg-[#A32A3E] text-[#FCE8EB] font-bold uppercase text-xs tracking-[0.15em] shadow-xl transition-all duration-300 border border-[#E6C280]/30 hover:border-[#E6C280]/60"
+                style="animation: pulseSoft 2.5s ease-in-out infinite;">
+                <span>Konsultasi Bebas Biaya via WA</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- FILTER KATEGORI & GRID PAKET -->
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-    
-    <!-- Filter Buttons -->
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="filter-buttons">
-      <button data-cat="all" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#2563EB] text-white shadow-sm">
-        Semua Paket
-      </button>
-      <button data-cat="Perusahaan" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#131F37] text-[#94A3B8] hover:bg-[#1E2F4D] hover:text-white border border-[#1E2F4D]">
-        Perusahaan
-      </button>
-      <button data-cat="Sekolah" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#131F37] text-[#94A3B8] hover:bg-[#1E2F4D] hover:text-white border border-[#1E2F4D]">
-        Sekolah
-      </button>
-      <button data-cat="Keluarga" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#131F37] text-[#94A3B8] hover:bg-[#1E2F4D] hover:text-white border border-[#1E2F4D]">
-        Keluarga
-      </button>
-      <button data-cat="Kampus/Organisasi" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all filter-btn bg-[#131F37] text-[#94A3B8] hover:bg-[#1E2F4D] hover:text-white border border-[#1E2F4D]">
-        Kampus / Organisasi
-      </button>
-    </div>
+<!-- Mount Footer -->
+<div id="footer-mount"></div>
 
-    <!-- Grid Container -->
-    <div id="packages-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Injected via JS -->
-    </div>
-
-  </section>
-
-  <!-- CTA BANNER -->
-  <section class="py-16 bg-[#111D38] border-t border-[#1E2F4D] text-white text-center reveal">
-    <div class="max-w-4xl mx-auto px-4 space-y-5">
-      <h2 class="text-2xl sm:text-3xl font-serif italic text-white">
-        Konsultasikan Kebutuhan Outbound Anda Sekarang!
-      </h2>
-      <p class="text-xs sm:text-sm text-[#94A3B8] max-w-xl mx-auto font-light leading-relaxed">
-        Tim CS kami siap membantu merancang susunan acara (rundown) dan estimasi anggaran sesuai budget Anda.
-      </p>
-      <div>
-        <a href="https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20konsultasi%20paket%20outbound" target="_blank" class="inline-flex items-center space-x-2 px-8 py-3.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-bold uppercase text-xs tracking-wider shadow-lg transition-all border border-blue-400/20">
-          <span>Konsultasi Bebas Biaya via WA</span>
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Mount Footer -->
-  <div id="footer-mount"></div>
-
-  <script type="module">
+<script type="module">
     import { renderNavbar, renderFooter, renderFloatingWA, openBookingModal, initScrollReveal } from '/src/js/shared.js';
     import { packagesData } from '/src/data/packages.js';
 
     document.addEventListener('DOMContentLoaded', () => {
-      renderNavbar('paket');
-      renderFooter();
-      renderFloatingWA();
+        renderNavbar('paket');
+        renderFooter();
+        renderFloatingWA();
 
-      const grid = document.getElementById('packages-grid');
-      const filterBtns = document.querySelectorAll('.filter-btn');
+        const grid = document.getElementById('packages-grid');
+        const filterBtns = document.querySelectorAll('.filter-btn');
 
-      function renderGrid(filteredList) {
-        if (!grid) return;
-        if (filteredList.length === 0) {
-          grid.innerHTML = `<p class="col-span-full text-center text-[#94A3B8] py-12 text-sm">Tidak ada paket ditemukan untuk kategori ini.</p>`;
-          return;
+        // Render kartu PAKET ASLI (tanpa efek elegan tambahan)
+        function renderGrid(filteredList) {
+            if (!grid) return;
+            if (filteredList.length === 0) {
+                grid.innerHTML = `<p class="col-span-full text-center text-[#C0A8AE] py-12 text-sm">Tidak ada paket ditemukan untuk kategori ini.</p>`;
+                return;
+            }
+
+            grid.innerHTML = filteredList.map(pkg => `
+                <div class="rounded-2xl bg-[#280E15] border border-[#451823] shadow-sm overflow-hidden flex flex-col justify-between group hover:border-[#E6C280] transition-all duration-300">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#8C2333] border border-[#E6C280]/30 text-[#E6C280] font-bold text-[10px] uppercase tracking-wider shadow-sm">
+                                ${pkg.badge}
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-[#1A080C]/90 text-[#E6C280] text-xs font-semibold backdrop-blur-sm border border-[#451823] flex items-center space-x-1">
+                                <svg class="w-3.5 h-3.5 text-[#E6C280]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                                <span>${pkg.location}</span>
+                            </span>
+                        </div>
+
+                        <div class="p-5 space-y-2.5">
+                            <div class="flex items-center justify-between">
+                                <span class="text-[10px] font-bold text-[#E6C280] uppercase tracking-widest">${pkg.categoryLabel}</span>
+                                <span class="text-[10px] text-[#C0A8AE] font-medium flex items-center space-x-1">
+                                    <svg class="w-3 h-3 text-[#E6C280]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    <span>${pkg.duration}</span>
+                                </span>
+                            </div>
+                            <h3 class="text-base font-bold text-white leading-snug">${pkg.title}</h3>
+                            <p class="text-xs text-[#C0A8AE] line-clamp-2 leading-relaxed">${pkg.shortDesc}</p>
+
+                            <div class="pt-3 border-t border-[#451823]">
+                                <span class="text-[10px] text-[#C0A8AE] block">Investasi Mulai</span>
+                                <div class="text-xl font-bold text-[#E6C280]">
+                                    ${pkg.price} <small class="text-xs font-normal text-[#C0A8AE]">${pkg.priceUnit}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 pt-0 flex items-center space-x-2">
+                        <a href="/paket/${pkg.id}.html" class="flex-1 py-2.5 rounded-full bg-[#200A0F] hover:bg-[#3D1420] text-center text-xs font-bold text-[#E6C280] border border-[#451823] transition-colors">
+                            Detail Lengkap
+                        </a>
+                        <button onclick="window.bookingTrigger('${pkg.id}')" class="flex-1 py-2.5 rounded-full bg-[#8C2333] hover:bg-[#A32A3E] text-[#FCE8EB] border border-[#E6C280]/30 text-center text-xs font-bold uppercase tracking-wider shadow-sm">
+                            Booking
+                        </button>
+                    </div>
+                </div>
+            `).join('');
         }
 
-        grid.innerHTML = filteredList.map(pkg => `
-          <div class="rounded-2xl bg-[#131F37] border border-[#1E2F4D] shadow-sm overflow-hidden flex flex-col justify-between group hover:border-[#2563EB] transition-all duration-300 reveal">
-            <div>
-              <div class="relative h-48 overflow-hidden">
-                <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-[#2563EB] text-white font-bold text-[10px] uppercase tracking-wider shadow-sm">
-                  ${pkg.badge}
-                </span>
-                <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-[#0B132B]/90 text-[#38BDF8] text-xs font-semibold backdrop-blur-sm border border-[#1E2F4D] flex items-center space-x-1">
-                  <svg class="w-3.5 h-3.5 text-[#38BDF8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
-                  <span>${pkg.location}</span>
-                </span>
-              </div>
+        // Initial render
+        renderGrid(packagesData);
 
-              <div class="p-5 space-y-2.5">
-                <div class="flex items-center justify-between">
-                  <span class="text-[10px] font-bold text-[#38BDF8] uppercase tracking-widest">${pkg.categoryLabel}</span>
-                  <span class="text-[10px] text-[#94A3B8] font-medium flex items-center space-x-1">
-                    <svg class="w-3 h-3 text-[#38BDF8]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span>${pkg.duration}</span>
-                  </span>
-                </div>
-                <h3 class="text-base font-bold text-white leading-snug">${pkg.title}</h3>
-                <p class="text-xs text-[#94A3B8] line-clamp-2 leading-relaxed">${pkg.shortDesc}</p>
+        // Filter events (asli)
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-[#8C2333]', 'text-[#FCE8EB]', 'border', 'border-[#E6C280]/30', 'shadow-sm');
+                    b.classList.add('bg-[#280E15]', 'text-[#C0A8AE]', 'hover:bg-[#3D1420]', 'hover:text-[#E6C280]', 'border', 'border-[#451823]');
+                });
 
-                <div class="pt-3 border-t border-[#1E2F4D]">
-                  <span class="text-[10px] text-[#94A3B8] block">Investasi Mulai</span>
-                  <div class="text-xl font-bold text-[#38BDF8]">
-                    ${pkg.price} <small class="text-xs font-normal text-[#94A3B8]">${pkg.priceUnit}</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+                btn.classList.remove('bg-[#280E15]', 'text-[#C0A8AE]', 'hover:bg-[#3D1420]', 'hover:text-[#E6C280]', 'border', 'border-[#451823]');
+                btn.classList.add('bg-[#8C2333]', 'text-[#FCE8EB]', 'border', 'border-[#E6C280]/30', 'shadow-sm');
 
-            <div class="p-5 pt-0 flex items-center space-x-2">
-              <a href="/paket/${pkg.id}.html" class="flex-1 py-2.5 rounded-full bg-[#1E2F4D] hover:bg-[#2563EB] text-center text-xs font-bold text-white transition-colors">
-                Detail Lengkap
-              </a>
-              <button onclick="window.bookingTrigger('${pkg.id}')" class="flex-1 py-2.5 rounded-full bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-center text-xs font-bold uppercase tracking-wider shadow-sm">
-                Booking
-              </button>
-            </div>
-          </div>
-        `).join('');
-
-        initScrollReveal();
-      }
-
-      // Initial render
-      renderGrid(packagesData);
-
-      // Filter events
-      filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-          filterBtns.forEach(b => {
-            b.classList.remove('bg-[#2563EB]', 'text-white', 'shadow-sm');
-            b.classList.add('bg-[#131F37]', 'text-[#94A3B8]', 'hover:bg-[#1E2F4D]', 'hover:text-white', 'border', 'border-[#1E2F4D]');
-          });
-
-          btn.classList.remove('bg-[#131F37]', 'text-[#94A3B8]', 'hover:bg-[#1E2F4D]', 'hover:text-white', 'border', 'border-[#1E2F4D]');
-          btn.classList.add('bg-[#2563EB]', 'text-white', 'shadow-sm');
-
-          const cat = btn.getAttribute('data-cat');
-          if (cat === 'all') {
-            renderGrid(packagesData);
-          } else {
-            const filtered = packagesData.filter(p => p.category === cat);
-            renderGrid(filtered);
-          }
+                const cat = btn.getAttribute('data-cat');
+                if (cat === 'all') {
+                    renderGrid(packagesData);
+                } else {
+                    const filtered = packagesData.filter(p => p.category === cat);
+                    renderGrid(filtered);
+                }
+            });
         });
-      });
 
-      window.bookingTrigger = (pkgId) => {
-        const foundPkg = packagesData.find(p => p.id === pkgId);
-        openBookingModal(foundPkg || {});
-      };
+        window.bookingTrigger = (pkgId) => {
+            const foundPkg = packagesData.find(p => p.id === pkgId);
+            openBookingModal(foundPkg || {});
+        };
 
-      initScrollReveal();
+        // Observer untuk animasi reveal pada hero & CTA
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.12 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Tetap panggil initScrollReveal jika ada (untuk kompatibilitas)
+        if (typeof initScrollReveal === 'function') {
+            initScrollReveal();
+        }
     });
-  </script>
+</script>
 </body>
 </html>

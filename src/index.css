@@ -2,17 +2,17 @@
 
 @layer base {
   :root {
-    --bg-main: #0B132B;
-    --bg-card: #131F37;
-    --bg-accent: #111D38;
-    --primary-navy: #1D4ED8;
-    --primary-blue: #2563EB;
-    --light-blue: #38BDF8;
-    --slate-muted: #94A3B8;
-    --border-navy: #1E2F4D;
-    --text-heading: #FFFFFF;
-    --text-muted: #94A3B8;
-    --text-body: #E2E8F0;
+    --bg-main: #FAF8F5;
+    --bg-card: #280E15;
+    --bg-accent: #F5F2ED;
+    --primary-navy: #751B29;
+    --primary-blue: #8C2333;
+    --light-blue: #E6C280;
+    --slate-muted: #5C4247;
+    --border-navy: #E6DCDD;
+    --text-heading: #1C070C;
+    --text-muted: #5C4247;
+    --text-body: #2D151B;
   }
 
   body {
@@ -50,19 +50,19 @@
   animation: modalPop 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Custom Scrollbar - Navy Tones */
+/* Custom Scrollbar - Maroon & Gold Tones */
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B132B;
+  background: #1A080C;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E2F4D;
+  background: #451823;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563EB;
+  background: #8C2333;
 }
 
 /* Smooth Navbar Hover Styles */
@@ -75,21 +75,21 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #94A3B8;
+  color: #C0A8AE;
   border-radius: 0.5rem;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .nav-link:hover {
-  color: #FFFFFF;
-  background-color: rgba(37, 99, 235, 0.15);
+  color: #FCE8EB;
+  background-color: rgba(230, 194, 128, 0.12);
   transform: translateY(-1px);
 }
 
 .nav-link.active-link {
-  color: #38BDF8;
+  color: #E6C280;
   font-weight: 700;
-  background-color: rgba(37, 99, 235, 0.2);
+  background-color: rgba(140, 35, 51, 0.35);
 }
 
 .nav-link.active-link::after {
@@ -99,7 +99,7 @@
   left: 0.75rem;
   right: 0.75rem;
   height: 2.5px;
-  background-color: #38BDF8;
+  background-color: #E6C280;
   border-radius: 9999px;
   transition: all 0.3s ease;
 }
@@ -121,72 +121,78 @@
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 
-/* Navy Tones Cards */
+/* Maroon Tones Cards */
 .card-emerald, .card-natural, .card-navy {
-  background: #131F37;
-  border: 1px solid #1E2F4D;
+  background: #280E15;
+  border: 1px solid #451823;
   border-radius: 1.25rem;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
 }
 
 .card-emerald:hover, .card-natural:hover, .card-navy:hover {
-  border-color: #2563EB;
+  border-color: #C59A5B;
   transform: translateY(-5px);
-  box-shadow: 0 16px 32px -6px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 16px 32px -6px rgba(197, 154, 91, 0.2);
 }
 
-/* Navy Tones Buttons */
+/* Maroon & Gold Tones Buttons */
 .btn-forest, .btn-primary, .btn-navy {
-  background: #2563EB;
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #8C2333 0%, #6E1B28 100%);
+  border: 1px solid rgba(230, 194, 128, 0.3);
+  color: #FCE8EB;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 4px 14px rgba(140, 35, 51, 0.4);
 }
 
 .btn-forest:hover, .btn-primary:hover, .btn-navy:hover {
-  background: #1D4ED8;
+  background: linear-gradient(135deg, #A32A3E 0%, #8C2333 100%);
   color: #FFFFFF;
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+  border-color: rgba(230, 194, 128, 0.6);
+  box-shadow: 0 6px 20px rgba(140, 35, 51, 0.6);
   transform: translateY(-2px);
 }
 
 .btn-sage, .btn-secondary {
-  background: #1E2F4D;
-  color: #FFFFFF;
+  background: #200A0F;
+  border: 1px solid #451823;
+  color: #FCE8EB;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .btn-sage:hover, .btn-secondary:hover {
-  background: #2563EB;
+  background: #8C2333;
   color: #FFFFFF;
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+  border-color: #E6C280;
+  box-shadow: 0 6px 20px rgba(140, 35, 51, 0.4);
   transform: translateY(-2px);
 }
 
-/* Legacy support alias for btn-maroon to point to navy blue button */
+/* Legacy support alias for btn-maroon */
 .btn-maroon {
-  background: #2563EB;
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #8C2333 0%, #6E1B28 100%);
+  border: 1px solid rgba(230, 194, 128, 0.3);
+  color: #FCE8EB;
   font-weight: 700;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 4px 14px rgba(140, 35, 51, 0.4);
 }
 
 .btn-maroon:hover {
-  background: #1D4ED8;
+  background: linear-gradient(135deg, #A32A3E 0%, #8C2333 100%);
   color: #FFFFFF;
-  box-shadow: 0 6px 22px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 6px 22px rgba(140, 35, 51, 0.6);
   transform: translateY(-2px);
 }
 
-/* Navy Badge */
+/* Maroon & Gold Badge */
 .badge-sage, .badge-maroon, .badge-navy {
-  background-color: #2563EB;
-  color: #FFFFFF;
+  background-color: rgba(140, 35, 51, 0.4);
+  border: 1px solid rgba(230, 194, 128, 0.3);
+  color: #E6C280;
 }
 
 /* Pulse animation for floating WhatsApp */

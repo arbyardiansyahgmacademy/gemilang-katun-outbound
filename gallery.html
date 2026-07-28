@@ -1,131 +1,258 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeri Outbound Malang Batu | GemilangKatunOutbond</title>
-  <link rel="icon" type="image/png" href="/assets/images/logoo.webp" />
-  
-  <meta name="description" content="Dokumentasi foto dan video asli kegiatan outbound, team building, rafting, & family gathering GemilangKatunOutbond Malang Batu." />
-  <meta name="keywords" content="gemilangkatunoutbond, galeri outbound malang, foto outbound batu, foto team building malang" />
-  <link rel="canonical" href="https://gemilangkatunoutbond.co.id/gallery.html" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Outbound Malang Batu | GemilangKatunOutbond</title>
+    <link rel="icon" type="image/png" href="/assets/images/logoo.webp" />
 
-  <link rel="stylesheet" href="/src/index.css" />
+    <meta name="description" content="Dokumentasi foto dan video asli kegiatan outbound, team building, rafting, & family gathering GemilangKatunOutbond Malang Batu." />
+    <meta name="keywords" content="gemilangkatunoutbond, galeri outbound malang, foto outbound batu, foto team building malang" />
+    <link rel="canonical" href="https://gemilangkatunoutbond.co.id/gallery.html" />
+
+    <link rel="stylesheet" href="/src/index.css" />
+
+    <!-- Custom Elegant Styles untuk Hero & CTA -->
+    <style>
+        :root {
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        /* ========== KEYFRAMES ========== */
+        @keyframes fadeUpIn {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        @keyframes pulseSoft {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(140, 35, 51, 0.4); }
+            50% { box-shadow: 0 0 0 16px rgba(140, 35, 51, 0); }
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ========== REVEAL CLASSES ========== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+            will-change: opacity, transform;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== DECORATIVE LINE ========== */
+        .decorative-line {
+            height: 2px;
+            background: linear-gradient(90deg, #E6C280, #8C2333, #E6C280);
+            background-size: 200% 100%;
+            animation: gradientShift 4s ease infinite;
+            border-radius: 2px;
+        }
+
+        /* ========== BUTTON SHIMMER ========== */
+        .btn-shimmer {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-shimmer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.12),
+                    rgba(255, 255, 255, 0.06),
+                    transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        /* ========== GALLERY CARD HOVER (asli) ========== */
+        .gallery-card {
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-card:hover {
+            border-color: #E6C280;
+            box-shadow: 0 8px 30px rgba(26, 8, 12, 0.3);
+        }
+    </style>
 </head>
-<body class="bg-[#0B132B] text-[#E2E8F0] antialiased selection:bg-[#2563EB] selection:text-white font-sans">
+<body class="bg-[#FAF8F5] text-[#2D151B] antialiased selection:bg-[#8C2333] selection:text-[#FCE8EB] font-sans">
 
-  <!-- Mount Navbar -->
-  <div id="navbar-mount"></div>
+    <!-- Mount Navbar -->
+    <div id="navbar-mount"></div>
 
-  <!-- HEADER BANNER -->
-  <section class="py-16 bg-[#0B132B] border-b border-[#1E2F4D] text-white text-center relative reveal">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
-      <span class="inline-block px-3.5 py-1 rounded-full bg-[#2563EB]/20 border border-[#2563EB]/40 text-[#38BDF8] text-xs font-bold uppercase tracking-widest">
-        Dokumentasi GemilangKatunOutbond
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-white italic">Galeri Outbound Malang Batu</h1>
-      <p class="text-xs sm:text-sm text-[#94A3B8] max-w-2xl mx-auto font-light leading-relaxed">
-        Koleksi momen seru, keceriaan, dan kekompakan tim selama mengikuti program di Malang dan Batu. Klik pada gambar untuk memperbesar & geser foto!
-      </p>
+    <!-- ==================== HERO BANNER (ELEGAN) ==================== -->
+    <section class="relative py-20 sm:py-24 bg-[#1A080C] border-b border-[#451823] text-white text-center overflow-hidden">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #E6C280 1px, transparent 1px); background-size: 24px 24px;"></div>
+        <!-- Glow orbs -->
+        <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#8C2333]/10 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-[#E6C280]/5 blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5 reveal">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-[#8C2333]/30 border border-[#E6C280]/40 text-[#E6C280] text-xs font-bold uppercase tracking-[0.2em] opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.1s_forwards]">
+                Dokumentasi GemilangKatunOutbond
+            </span>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white italic tracking-tight opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.25s_forwards]">
+                Galeri Outbound Malang Batu
+            </h1>
+            <div class="decorative-line w-24 mx-auto opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.35s_forwards]" style="animation-fill-mode: forwards;"></div>
+            <p class="text-xs sm:text-sm text-[#C0A8AE] max-w-2xl mx-auto font-light leading-relaxed opacity-0 animate-[fadeUpIn_0.7s_var(--ease-out-expo)_0.45s_forwards]">
+                Koleksi momen seru, keceriaan, dan kekompakan tim selama mengikuti program di Malang dan Batu. Klik pada gambar untuk memperbesar & geser foto!
+            </p>
+        </div>
+    </section>
+
+    <!-- ==================== GALLERY GRID (ASLI) ==================== -->
+    <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
+            <!-- Injected via JavaScript -->
+        </div>
+    </section>
+
+    <!-- ==================== CTA BANNER (ELEGAN) ==================== -->
+    <section class="relative py-16 sm:py-20 bg-[#200A0F] border-t border-[#451823] text-white text-center overflow-hidden">
+        <!-- Background glow -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-[#8C2333]/8 blur-4xl pointer-events-none"></div>
+
+        <div class="relative max-w-4xl mx-auto px-4 space-y-6 reveal">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif italic text-white leading-snug">
+                Siap Mengabadikan Momen<br class="sm:hidden"> Outbound Anda Berikutnya?
+            </h2>
+            <div class="decorative-line w-16 mx-auto"></div>
+            <p class="text-xs sm:text-sm text-[#C0A8AE] max-w-xl mx-auto font-light leading-relaxed">
+                Percayakan dokumentasi dan keseruan acara Anda bersama tim profesional GemilangKatunOutbond. Konsultasikan paket terbaik sekarang!
+            </p>
+            <div class="pt-2">
+                <a href="https://wa.me/6282211221909?text=Halo%20Admin%20GemilangKatunOutbond,%20saya%20ingin%20konsultasi%20paket%20outbound%20setelah%20melihat%20galeri"
+                target="_blank"
+                class="btn-shimmer inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-[#8C2333] hover:bg-[#A32A3E] text-[#FCE8EB] font-bold uppercase text-xs tracking-[0.15em] shadow-xl transition-all duration-300 border border-[#E6C280]/30 hover:border-[#E6C280]/60"
+                style="animation: pulseSoft 2.5s ease-in-out infinite;">
+                <span>Konsultasi Bebas Biaya via WA</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+            </a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- GALLERY GRID WITH LIGHTBOX -->
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="gallery-grid">
-      <!-- Injected via JavaScript -->
-    </div>
+<!-- Mount Footer -->
+<div id="footer-mount"></div>
 
-  </section>
-
-  <!-- Mount Footer -->
-  <div id="footer-mount"></div>
-
-  <script type="module">
+<script type="module">
     import { renderNavbar, renderFooter, renderFloatingWA, initScrollReveal, openLightboxAtIndex } from '/src/js/shared.js';
 
     document.addEventListener('DOMContentLoaded', () => {
-      renderNavbar('gallery');
-      renderFooter();
-      renderFloatingWA();
+        renderNavbar('gallery');
+        renderFooter();
+        renderFloatingWA();
 
-      const galleryData = [
-        { 
-          src: '/assets/images/asyik_11.webp', 
-          title: 'Flying Fox & High Ropes Coban Rondo', 
-          cat: 'Coban Rondo Batu', 
-          desc: 'Simulasi ketangkasan, melatih fokus, dan tantangan keberanian melewati wahana kawat gantung di tengah kesejukan hutan pinus Coban Rondo Batu Malang.' 
-        },
-        { 
-          src: '/assets/images/asyik_7.webp', 
-          title: 'Corporate Team Building PT Petrokimia', 
-          cat: 'Resort Batu Malang', 
-          desc: 'Kegiatan pemantapan kerjasama tim, problem solving, dan sinergi karyawan instansi perusahaan bersama fasilitator sertifikasi BNSP.' 
-        },
-        { 
-          src: '/assets/images/asyik_2.webp', 
-          title: 'Rafting 7 KM Kaliwatu Arung Jeram', 
-          cat: 'Kaliwatu Batu', 
-          desc: 'Keseruan arung jeram menyusuri riam sungai Kaliwatu Batu Malang sejauh 7 KM lengkap dengan skippers handal dan perlengkapan safety.' 
-        },
-        { 
-          src: '/assets/images/asyik_3.webp', 
-          title: 'Outbound Edukasi Siswa SMA 1 Malang', 
-          cat: 'Selecta Batu', 
-          desc: 'Program latihan kepemimpinan dasar (LDK), kedisiplinan, dan kekompakan siswa di lingkungan terbuka asri Selecta Kota Batu.' 
-        },
-        { 
-          src: '/assets/images/asyik_5.webp', 
-          title: 'Simulasi Tempur Paintball Hutan Pinus', 
-          cat: 'Coban Rondo Batu', 
-          desc: 'Strategi perang dan adu taktik tim menggunakan senjata paintball ramah lingkungan dengan perlengkapan goggle dan pelindung badan penuh.' 
-        },
-        { 
-          src: '/assets/images/asyik_6.webp', 
-          title: 'Camping & Makrab BEM Universitas Malang', 
-          cat: 'Bedengan Malang', 
-          desc: 'Malam keakraban, api unggun, dan perkemahan di tepi sungai Bedengan Dau Malang yang melatih kemandirian serta jiwa kebersamaan.' 
-        },
-        { 
-          src: '/assets/images/asyik_1.webp', 
-          title: 'Family Gathering Petik Apel Agrowisata', 
-          cat: 'Agrowisata Batu', 
-          desc: 'Momen kehangatan keluarga dan komunitas menikmati wisata edukasi petik apel segar langsung dari kebun khas Kota Batu.' 
-        },
-        { 
-          src: '/assets/images/asyik_8.webp', 
-          title: 'Fun Games Ice Breaking & Energizer', 
-          cat: 'Tirta Nirwana Batu', 
-          desc: 'Rangkaian permainan pembuka yang meriah dan penuh tawa untuk mencairkan suasana sebelum memasuki sesi materi utama.' 
+        const galleryData = [
+            {
+                src: '/assets/images/asyik_11.webp',
+                title: 'Flying Fox & High Ropes Coban Rondo',
+                cat: 'Coban Rondo Batu',
+                desc: 'Simulasi ketangkasan, melatih fokus, dan tantangan keberanian melewati wahana kawat gantung di tengah kesejukan hutan pinus Coban Rondo Batu Malang.'
+            },
+            {
+                src: '/assets/images/asyik_7.webp',
+                title: 'Corporate Team Building PT Petrokimia',
+                cat: 'Resort Batu Malang',
+                desc: 'Kegiatan pemantapan kerjasama tim, problem solving, dan sinergi karyawan instansi perusahaan bersama fasilitator sertifikasi BNSP.'
+            },
+            {
+                src: '/assets/images/asyik_2.webp',
+                title: 'Rafting 7 KM Kaliwatu Arung Jeram',
+                cat: 'Kaliwatu Batu',
+                desc: 'Keseruan arung jeram menyusuri riam sungai Kaliwatu Batu Malang sejauh 7 KM lengkap dengan skippers handal dan perlengkapan safety.'
+            },
+            {
+                src: '/assets/images/asyik_3.webp',
+                title: 'Outbound Edukasi Siswa SMA 1 Malang',
+                cat: 'Selecta Batu',
+                desc: 'Program latihan kepemimpinan dasar (LDK), kedisiplinan, dan kekompakan siswa di lingkungan terbuka asri Selecta Kota Batu.'
+            },
+            {
+                src: '/assets/images/asyik_5.webp',
+                title: 'Simulasi Tempur Paintball Hutan Pinus',
+                cat: 'Coban Rondo Batu',
+                desc: 'Strategi perang dan adu taktik tim menggunakan senjata paintball ramah lingkungan dengan perlengkapan goggle dan pelindung badan penuh.'
+            },
+            {
+                src: '/assets/images/asyik_6.webp',
+                title: 'Camping & Makrab BEM Universitas Malang',
+                cat: 'Bedengan Malang',
+                desc: 'Malam keakraban, api unggun, dan perkemahan di tepi sungai Bedengan Dau Malang yang melatih kemandirian serta jiwa kebersamaan.'
+            },
+            {
+                src: '/assets/images/asyik_1.webp',
+                title: 'Family Gathering Petik Apel Agrowisata',
+                cat: 'Agrowisata Batu',
+                desc: 'Momen kehangatan keluarga dan komunitas menikmati wisata edukasi petik apel segar langsung dari kebun khas Kota Batu.'
+            },
+            {
+                src: '/assets/images/asyik_8.webp',
+                title: 'Fun Games Ice Breaking & Energizer',
+                cat: 'Tirta Nirwana Batu',
+                desc: 'Rangkaian permainan pembuka yang meriah dan penuh tawa untuk mencairkan suasana sebelum memasuki sesi materi utama.'
+            }
+        ];
+
+        const grid = document.getElementById('gallery-grid');
+        if (grid) {
+            grid.innerHTML = galleryData.map((item, idx) => `
+                <div class="gallery-card rounded-2xl bg-[#280E15] border border-[#451823] shadow-sm overflow-hidden group cursor-pointer relative transition-all duration-300" onclick="openGalleryPhoto(${idx})">
+                    <div class="h-52 overflow-hidden">
+                        <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div class="absolute inset-0 bg-[#1A080C]/90 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
+                        <span class="text-[10px] font-bold text-[#E6C280] uppercase tracking-widest block">${item.cat}</span>
+                        <h3 class="text-xs font-bold text-white leading-tight">${item.title}</h3>
+                        <p class="text-[10px] text-[#C0A8AE] mt-1 font-light flex items-center space-x-1">
+                            <svg class="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                            <span>Buka foto & geser</span>
+                        </p>
+                    </div>
+                </div>
+            `).join('');
         }
-      ];
 
-      const grid = document.getElementById('gallery-grid');
-      if (grid) {
-        grid.innerHTML = galleryData.map((item, idx) => `
-          <div class="rounded-2xl bg-[#131F37] border border-[#1E2F4D] shadow-sm overflow-hidden group cursor-pointer relative hover:border-[#2563EB] transition-all duration-300 reveal" onclick="openGalleryPhoto(${idx})">
-            <div class="h-52 overflow-hidden">
-              <img src="${item.src}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-            </div>
-            <div class="absolute inset-0 bg-[#0B132B]/90 opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end text-white">
-              <span class="text-[10px] font-bold text-[#38BDF8] uppercase tracking-widest block">${item.cat}</span>
-              <h3 class="text-xs font-bold text-white leading-tight">${item.title}</h3>
-              <p class="text-[10px] text-[#94A3B8] mt-1 font-light flex items-center space-x-1">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                <span>Buka foto & geser</span>
-              </p>
-            </div>
-          </div>
-        `).join('');
-      }
+        window.openGalleryPhoto = (index) => {
+            openLightboxAtIndex(index, galleryData);
+        };
 
-      window.openGalleryPhoto = (index) => {
-        openLightboxAtIndex(index, galleryData);
-      };
+        // Intersection Observer untuk animasi reveal (hero, CTA, dan grid)
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { rootMargin: '0px 0px -60px 0px', threshold: 0.12 });
 
-      initScrollReveal();
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Panggil initScrollReveal jika diperlukan untuk kompatibilitas
+        if (typeof initScrollReveal === 'function') {
+            initScrollReveal();
+        }
     });
-  </script>
+</script>
 </body>
 </html>
